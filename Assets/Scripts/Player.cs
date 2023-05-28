@@ -6,17 +6,27 @@ public class Player : MonoBehaviour
     public static float GRAVITY = -9.81f;
 
     [SerializeField] private float moveSpeed = 3f;
-    [SerializeField] private float rotateSpeed = 10f;
+    // [SerializeField] private float rotateSpeed = 10f;
     [SerializeField] private float jumpSpeed = 1f;
     [SerializeField] private float groundDistance = 0.4f;
 
     [SerializeField] private CharacterController controller;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundMask;
+
+    [SerializeField] private UI_Inventory uiInventory;
     
     private Vector3 velocity;
     private bool isGrounded;
     private bool isWalking;
+
+    private Inventory inventory;
+
+    private void Start()
+    {
+        inventory = new Inventory();
+        uiInventory.setInventory(inventory);
+    }
 
     void Update()
     {

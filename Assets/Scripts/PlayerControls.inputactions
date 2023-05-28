@@ -58,6 +58,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Action",
+                    "type": "Button",
+                    "id": "def02836-ce74-4a66-a1de-e2482a5d4222",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -118,17 +127,6 @@
                 },
                 {
                     "name": "",
-                    "id": "0738a798-4433-47bb-9793-6c2edfeb66ed",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "d528d4b5-4b2d-40ca-8a95-d151fcdebc4b",
                     "path": "<Keyboard>/space",
                     "interactions": "",
@@ -163,7 +161,7 @@
                 {
                     "name": "",
                     "id": "60b2fe57-b462-4cb4-b2d8-38a5f6671178",
-                    "path": "<Mouse>/leftButton",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -179,6 +177,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "44f2a87e-d9f3-4fcb-974d-06f3150108cd",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
