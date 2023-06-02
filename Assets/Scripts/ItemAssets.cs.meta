@@ -3,7 +3,12 @@ guid: d6279665af939bc4abea5b21bcaf7c95
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - potSprite: {fileID: 21300000, guid: af2a84a8c6ea3dc4b99c38b4a571b5b4, type: 3}
+  - seedsSprite: {fileID: 21300000, guid: c1c4ed8f0d05eed4e9e5435468de532b, type: 3}
+  - smallShovelSprite: {fileID: 21300000, guid: bbbcd1195679d2b4799a41af6a91e13b,
+      type: 3}
+  - smallForkSprite: {fileID: 21300000, guid: 1a10953c14b9c8541ada19e1c7523f1a, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

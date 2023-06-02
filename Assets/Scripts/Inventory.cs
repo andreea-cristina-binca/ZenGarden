@@ -14,7 +14,7 @@ public class Inventory
         AddItem(new Item { itemType = Item.ItemType.Seeds, amount = 1});
         AddItem(new Item { itemType = Item.ItemType.SmallShovel, amount = 1});
         AddItem(new Item { itemType = Item.ItemType.SmallFork, amount = 1});
-        Debug.Log(itemList.Count);
+        // Debug.Log(itemList.Count);
     }
 
     public void AddItem(Item item)

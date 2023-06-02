@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundMask;
 
-    [SerializeField] private UI_Inventory uiInventory;
+    // [SerializeField] private UI_Inventory uiInventory;
     
     private Vector3 velocity;
     private bool isGrounded;
@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         inventory = new Inventory();
-        uiInventory.setInventory(inventory);
+        // uiInventory.setInventory(inventory);
     }
 
     void Update()

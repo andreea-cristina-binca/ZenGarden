@@ -31,6 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1820762724943736574}
+  - {fileID: 6055756198056367822}
   m_Father: {fileID: 1891982890837722243}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -98,6 +99,7 @@ GameObject:
   - component: {fileID: 6546239309348495848}
   - component: {fileID: 7198801086272992198}
   - component: {fileID: 1305656695}
+  - component: {fileID: 2678122900230715065}
   m_Layer: 0
   m_Name: New PotPlant(Clone)
   m_TagString: Untagged
@@ -120,7 +122,7 @@ Transform:
   - {fileID: 913917400121327640}
   - {fileID: 1568240065500840156}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &348525980117023687
 MonoBehaviour:
@@ -137,15 +139,60 @@ MonoBehaviour:
   delegates: []
   useDistance: 2
   triggerType: 1
-  key: 102
+  key: 101
   actionTemplate: {fileID: 0}
   actions:
   - rid: 8031577948653092867
+  - rid: 1523893482780885014
+  - rid: 1523893482780885020
+  - rid: 1523893464419794954
   - rid: 8031577948653092868
+  - rid: 1523893482780885015
+  - rid: 1523893482780885021
   m_Interruptable: 0
   references:
     version: 2
     RefIds:
+    - rid: 1523893464419794954
+      type: {class: ShowProgressbar, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
+      data:
+        m_Type: DevionGames.InventorySystem.ShowProgressbar
+        m_Enabled: 1
+        m_WidgetName: General Progressbar
+        m_Title: picking up
+        m_Duration: 3
+    - rid: 1523893482780885014
+      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.SetEnabled
+        m_Enabled: 1
+        m_Target: 1
+        m_ComponentName: Player
+        m_Enable: 0
+    - rid: 1523893482780885015
+      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.SetEnabled
+        m_Enabled: 1
+        m_Target: 1
+        m_ComponentName: Player
+        m_Enable: 1
+    - rid: 1523893482780885020
+      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.SetEnabled
+        m_Enabled: 1
+        m_Target: 2
+        m_ComponentName: MouseLook
+        m_Enable: 0
+    - rid: 1523893482780885021
+      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.SetEnabled
+        m_Enabled: 1
+        m_Target: 2
+        m_ComponentName: MouseLook
+        m_Enable: 1
     - rid: 8031577948653092867
       type: {class: CanPickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
@@ -175,8 +222,12 @@ MonoBehaviour:
   saveable: 1
   m_Items:
   - {fileID: 8048573061241985464, guid: c003d55480015c24687277a414bf728a, type: 2}
-  m_Amounts: 01000000
+  - {fileID: 8048573061241985464, guid: c003d55480015c24687277a414bf728a, type: 2}
+  - {fileID: 8048573061241985464, guid: c003d55480015c24687277a414bf728a, type: 2}
+  m_Amounts: 010000000100000001000000
   m_Modifiers:
+  - modifiers: []
+  - modifiers: []
   - modifiers: []
   onChange:
     m_PersistentCalls:
@@ -253,6 +304,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2678122900230715065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961807357963095683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b4f9b8f5a125ea44bc92ad1346284bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plantPrefab: {fileID: 4944097069130733961, guid: d26eb20b4f73f6043a3ab4d17adf8269,
+    type: 3}
+  spawnPoint: {fileID: 6055756198056367822}
 --- !u!1 &1218901133198790480
 GameObject:
   m_ObjectHideFlags: 0
@@ -1010,6 +1076,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &7313719386142491453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6055756198056367822}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6055756198056367822
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7313719386142491453}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1568240065500840156}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7995502456713503240
 GameObject:
   m_ObjectHideFlags: 0

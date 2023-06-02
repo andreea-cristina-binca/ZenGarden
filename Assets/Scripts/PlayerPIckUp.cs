@@ -16,7 +16,11 @@ public class PlayerPIckUp : MonoBehaviour
             float pickUpDistance = 2f;
             if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out RaycastHit raycastHit, pickUpDistance, pickUpLayerMask))
             {
-                Debug.Log(raycastHit.transform);
+                // Debug.Log(raycastHit.transform);
+                //if (raycastHit.transform.TryGetComponent(out ShowPlant showPlant))
+                //{
+                //    showPlant.Interact();
+                //}
             }
         }
     }
