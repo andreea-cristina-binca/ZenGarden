@@ -54,12 +54,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4abab319188bac4a8515c585b13ba9d, type: 3}
-  m_Name: None
+  m_Name: Default
   m_EditorClassIdentifier: 
   m_Parent: {fileID: 0}
   name: Default
   m_EditorColor: {r: 0, g: 0, b: 0, a: 0}
   m_Cooldown: 1
+--- !u!114 &-8359429935277170025
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28fccac83a2fa2245991bffe45a6cdd1, type: 3}
+  m_Name: Vendor
+  m_EditorClassIdentifier: 
+  m_GroupName: Vendor
+  m_Items:
+  - {fileID: 6749398735700574335}
+  - {fileID: 6749398735700574335}
+  - {fileID: 6749398735700574335}
+  m_Amounts: 010000000100000001000000
+  m_Modifiers:
+  - modifiers: []
+  - modifiers: []
+  - modifiers: []
 --- !u!114 &-7737953637993624326
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -331,7 +353,8 @@ MonoBehaviour:
   categories:
   - {fileID: -8714117849886982192}
   equipments: []
-  itemGroups: []
+  itemGroups:
+  - {fileID: -8359429935277170025}
   settings:
   - {fileID: -1493650855609577974}
   - {fileID: 1443340347231830165}
@@ -379,7 +402,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: 
+  m_Name: Echinacea
   m_EditorClassIdentifier: 
   m_Id: 84c3f0f8-bd52-454f-8f71-b60c081b95e4
   m_ItemName: Echinacea
@@ -387,13 +410,13 @@ MonoBehaviour:
   m_DisplayName: New Item
   m_Icon: {fileID: 21300000, guid: 456447fb40658bc4eb872ea6e332f643, type: 3}
   m_Prefab: {fileID: 570254984458370730, guid: 2030eb1921f09134583e12d78b16c1ca, type: 3}
-  m_Description: 
+  m_Description: Flowery flower
   m_Category: {fileID: -8714117849886982192}
   m_IsSellable: 1
-  m_BuyPrice: 0
+  m_BuyPrice: 1
   m_CanBuyBack: 1
   m_BuyCurrency: {fileID: -9008354556261382020}
-  m_SellPrice: 0
+  m_SellPrice: 1
   m_SellCurrency: {fileID: -9008354556261382020}
   m_Stack: 1
   m_MaxStack: 1

@@ -3,7 +3,12 @@ guid: 2faf5605dd404f44fbc910855041ed2e
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Echinacea_purpurea_Magnus
+    second: {fileID: 2100000, guid: bc9e3e97680ee9e43b47b0e6d43ec90d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
