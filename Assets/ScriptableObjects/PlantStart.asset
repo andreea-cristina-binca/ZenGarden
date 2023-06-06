@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2309d9eec6d16de4aaa5f0fb47ba4e45, type: 3}
-  m_Name: Echinacea
+  m_Name: PlantStart
   m_EditorClassIdentifier: 
-  objectName: Echinacea
-  prefab: {fileID: 1472410512203595230, guid: 2030eb1921f09134583e12d78b16c1ca, type: 3}
-  seconds: 5
+  objectName: Plant Start
+  prefab: {fileID: 2553867415825186889, guid: 1b7138fb75af87b468d9bb8a60216b17, type: 3}
+  seconds: 0
   minutes: 0
   hours: 0

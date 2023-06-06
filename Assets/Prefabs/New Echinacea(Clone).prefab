@@ -33,8 +33,8 @@ Transform:
   m_GameObject: {fileID: 570254984458370730}
   m_LocalRotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0.013415065, y: 0.0028341173, z: -0.053090274}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -102,12 +102,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delegates: []
-  useDistance: 1.2
+  useDistance: 2
   triggerType: 8
   key: 102
   actionTemplate: {fileID: 0}
   actions:
   - rid: 1523893529703874596
+  - rid: 5820654173818978393
   - rid: 1523893529703874597
   m_Interruptable: 0
   references:
@@ -127,6 +128,12 @@ MonoBehaviour:
         m_WindowName: Inventory
         m_DestroyWhenEmpty: 1
         m_Amount: 1
+    - rid: 5820654173818978393
+      type: {class: LookAtTrigger, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.LookAtTrigger
+        m_Enabled: 1
+        m_Speed: 15
 --- !u!114 &1671645768266115318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,9 +210,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb71966b37c6ec47a1983eb61409dfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Second: 0
-  Minute: 0
-  Hour: 0
-  timerSeconds: 10
-  timerMinutes: 1
-  timerHours: 0

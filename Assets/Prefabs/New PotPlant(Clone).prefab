@@ -333,6 +333,7 @@ GameObject:
   - component: {fileID: 7198801086272992198}
   - component: {fileID: 1305656695}
   - component: {fileID: 2678122900230715065}
+  - component: {fileID: 3626750067654921074}
   m_Layer: 6
   m_Name: New PotPlant(Clone)
   m_TagString: Untagged
@@ -356,7 +357,7 @@ Transform:
   - {fileID: 1568240065500840156}
   - {fileID: 185561268}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &348525980117023687
 MonoBehaviour:
@@ -371,7 +372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delegates: []
-  useDistance: 2
+  useDistance: 1.2
   triggerType: 1
   key: 101
   actionTemplate: {fileID: 0}
@@ -549,6 +550,21 @@ MonoBehaviour:
   plantObject: {fileID: 11400000, guid: c0722fd336f39574ca53169edea58a84, type: 2}
   spawnPoint: {fileID: 6055756198056367822}
   timerObject: {fileID: 185561267}
+  plantStartObject: {fileID: 11400000, guid: 4296357c8873e57489187026166834dc, type: 2}
+--- !u!114 &3626750067654921074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961807357963095683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ff8949b55037043a6183d61fd8dcff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Title: 
+  m_Instruction: Interact
 --- !u!1 &1218901133198790480
 GameObject:
   m_ObjectHideFlags: 0

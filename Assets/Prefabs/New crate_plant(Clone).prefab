@@ -35,7 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: -180}
 --- !u!33 &149095710185566153
 MeshFilter:
@@ -124,11 +124,28 @@ MonoBehaviour:
   actionTemplate: {fileID: 0}
   actions:
   - rid: 8031577948653092890
+  - rid: 5820654173818978349
   - rid: 8031577948653092891
   m_Interruptable: 0
   references:
     version: 2
     RefIds:
+    - rid: 5820654173818978349
+      type: {class: Raycast, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.Raycast
+        m_Enabled: 1
+        m_Target: 2
+        m_Offset: {x: 0, y: 0, z: 0}
+        m_Direction: 0
+        m_MaxDistance: 15
+        m_LayerMask:
+          serializedVersion: 2
+          m_Bits: 4294967291
+        m_HitLayer:
+          serializedVersion: 2
+          m_Bits: 4294967291
+        m_QueryTriggerInteraction: 2
     - rid: 8031577948653092890
       type: {class: CanPickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
