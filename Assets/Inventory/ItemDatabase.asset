@@ -254,6 +254,50 @@ MonoBehaviour:
     delay: 2
     duration: 2
     ignoreTimeScale: 1
+--- !u!114 &-7020845222165887529
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Id: e075323b-f446-49a4-92b6-4956fe0bbe33
+  m_ItemName: Tulip
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 0}
+  m_Prefab: {fileID: 3922116559832180150, guid: 9b8696b4b20d57943ab538eb4af99f7c,
+    type: 3}
+  m_Description: 
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &-1780650119399518367
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -347,6 +391,7 @@ MonoBehaviour:
   - {fileID: 8048573061241985464}
   - {fileID: -353100398050370732}
   - {fileID: 6749398735700574335}
+  - {fileID: -7020845222165887529}
   currencies:
   - {fileID: -9008354556261382020}
   raritys: []
