@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9025416373191591077
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Dirt
+  m_EditorClassIdentifier: 
+  m_Id: 9b615d0b-7aae-454a-ba30-230ff6ffaf54
+  m_ItemName: Dirt
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: b2fc14f8df7b69c449d3262bec0767b6, type: 3}
+  m_Prefab: {fileID: 5186678643238212491, guid: 804268d39e3b0f84ba5b3fadbd8531cf,
+    type: 3}
+  m_Description: A pile of freshly fertilized ground, good for planting
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 0
+  m_BuyPrice: 0
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 0
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &-9008354556261382020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -60,6 +104,93 @@ MonoBehaviour:
   name: Default
   m_EditorColor: {r: 0, g: 0, b: 0, a: 0}
   m_Cooldown: 1
+--- !u!114 &-8595991825680623017
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Roses
+  m_EditorClassIdentifier: 
+  m_Id: 2b02e2ae-7bb7-471b-aca5-b72e9e0bc054
+  m_ItemName: Roses
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 9a9cfcd8ce13b6746b42e44dacee717d, type: 3}
+  m_Prefab: {fileID: 129746346745514977, guid: 0ed2ce0a8ab7c4444bcede25f55c9af5, type: 3}
+  m_Description: Romantic pink roses
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 10
+  m_CanBuyBack: 0
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 10
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+--- !u!114 &-8480780831047694530
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Daffodil
+  m_EditorClassIdentifier: 
+  m_Id: 6ef01749-8ab0-4abe-b3da-58c0da2724f6
+  m_ItemName: Daffodil
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: ef44740dee84d4a44ba2d4cfecd48a93, type: 3}
+  m_Prefab: {fileID: 1204382439218984136, guid: 9e138ddf9f83de3429a89a7b82fa672e,
+    type: 3}
+  m_Description: Breezy spring daffodil
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 3
+  m_CanBuyBack: 0
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 3
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &-8359429935277170025
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -74,11 +205,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Vendor
   m_Items:
-  - {fileID: 6749398735700574335}
-  - {fileID: 6749398735700574335}
-  - {fileID: 6749398735700574335}
-  m_Amounts: 010000000100000001000000
+  - {fileID: 7296480038318277723}
+  - {fileID: 914045514894526987}
+  - {fileID: -1328188924954542639}
+  - {fileID: 8723047200007963551}
+  m_Amounts: 0a0000000a0000000a0000000a000000
   m_Modifiers:
+  - modifiers: []
   - modifiers: []
   - modifiers: []
   - modifiers: []
@@ -254,7 +387,7 @@ MonoBehaviour:
     delay: 2
     duration: 2
     ignoreTimeScale: 1
---- !u!114 &-7020845222165887529
+--- !u!114 &-7479548766836001075
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -264,18 +397,62 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: 
+  m_Name: Tulips
   m_EditorClassIdentifier: 
-  m_Id: e075323b-f446-49a4-92b6-4956fe0bbe33
-  m_ItemName: Tulip
+  m_Id: 41a5fbf7-9bd2-4b3e-8d9b-ab064c87a7ec
+  m_ItemName: Tulips
   m_UseItemNameAsDisplayName: 1
   m_DisplayName: New Item
-  m_Icon: {fileID: 0}
-  m_Prefab: {fileID: 3922116559832180150, guid: 9b8696b4b20d57943ab538eb4af99f7c,
+  m_Icon: {fileID: 21300000, guid: 0f01d96fb9a13ec419a14037dfb704b9, type: 3}
+  m_Prefab: {fileID: 2028100980676359552, guid: fe3375584021e0f44b318808d852f6e4,
     type: 3}
-  m_Description: 
+  m_Description: Bright red tulips
   m_Category: {fileID: -8714117849886982192}
   m_IsSellable: 1
+  m_BuyPrice: 5
+  m_CanBuyBack: 0
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 5
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+--- !u!114 &-4401946254645871456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Plant Stand
+  m_EditorClassIdentifier: 
+  m_Id: f8172eb4-9953-469f-b290-8a819af40d17
+  m_ItemName: Plant Stand
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: afbc2b8ea328e324abf379e28a48ae33, type: 3}
+  m_Prefab: {fileID: 5386181738362230560, guid: 155b840ec284fd14283d68211a222762,
+    type: 3}
+  m_Description: A stand for plants
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 0
   m_BuyPrice: 0
   m_CanBuyBack: 1
   m_BuyCurrency: {fileID: -9008354556261382020}
@@ -331,7 +508,7 @@ MonoBehaviour:
   queriesHitTriggers: 0
   debugMessages: 1
   showAllComponents: 0
---- !u!114 &-353100398050370732
+--- !u!114 &-1328188924954542639
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -341,25 +518,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: Crate Plant
+  m_Name: Daffodil Seeds
   m_EditorClassIdentifier: 
-  m_Id: e6c31b78-07c6-45e6-94ae-c423a8043d95
-  m_ItemName: Crate Plant
+  m_Id: 900f1b2c-60b8-436f-81c9-7da71bebc74f
+  m_ItemName: Daffodil Seeds
   m_UseItemNameAsDisplayName: 1
   m_DisplayName: New Item
-  m_Icon: {fileID: 21300000, guid: ec24783658f55204083d307b3f27395e, type: 3}
-  m_Prefab: {fileID: 5710872717289833306, guid: 4e35dad696f39194985775b7e5c12913,
-    type: 3}
-  m_Description: 
+  m_Icon: {fileID: 21300000, guid: deaffbbec365e2a46a1f5150148a2614, type: 3}
+  m_Prefab: {fileID: 466647449347511606, guid: 9f1bc494d993ddd43a0f7f9c3249708c, type: 3}
+  m_Description: Seeds for daffodils
   m_Category: {fileID: -8714117849886982192}
-  m_IsSellable: 0
-  m_BuyPrice: 5
+  m_IsSellable: 1
+  m_BuyPrice: 1
   m_CanBuyBack: 1
   m_BuyCurrency: {fileID: -9008354556261382020}
-  m_SellPrice: 5
+  m_SellPrice: 1
   m_SellCurrency: {fileID: -9008354556261382020}
-  m_Stack: 1
-  m_MaxStack: 1
+  m_Stack: 10
+  m_MaxStack: 10
   m_IsDroppable: 1
   m_DropSound: {fileID: 0}
   m_OverridePrefab: {fileID: 0}
@@ -389,9 +565,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - {fileID: 8048573061241985464}
-  - {fileID: -353100398050370732}
   - {fileID: 6749398735700574335}
-  - {fileID: -7020845222165887529}
+  - {fileID: -7479548766836001075}
+  - {fileID: -8595991825680623017}
+  - {fileID: -8480780831047694530}
+  - {fileID: 5277878523181904017}
+  - {fileID: 7296480038318277723}
+  - {fileID: 914045514894526987}
+  - {fileID: -1328188924954542639}
+  - {fileID: 8723047200007963551}
+  - {fileID: -4401946254645871456}
+  - {fileID: -9025416373191591077}
   currencies:
   - {fileID: -9008354556261382020}
   raritys: []
@@ -406,6 +590,50 @@ MonoBehaviour:
   - {fileID: -7737953637993624326}
   - {fileID: -1780650119399518367}
   - {fileID: 6224895360770312772}
+--- !u!114 &914045514894526987
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Rose Seeds
+  m_EditorClassIdentifier: 
+  m_Id: 89b2a4a6-802c-4c18-bcbc-cc1087bbd4a1
+  m_ItemName: Rose Seeds
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 0113c57f0cb44df499c32a5c37ac0af7, type: 3}
+  m_Prefab: {fileID: 6193384571874414416, guid: a80cb8d5b0472c74ebc33be395d14b5d,
+    type: 3}
+  m_Description: Seeds for pink roses
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 1
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 1
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 10
+  m_MaxStack: 10
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &1443340347231830165
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -420,6 +648,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unstackEvent: 3
   unstackKeyCode: 304
+--- !u!114 &5277878523181904017
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Yellow Coreopsis
+  m_EditorClassIdentifier: 
+  m_Id: 290562ef-c515-4842-ba27-a93d41cc7f47
+  m_ItemName: Yellow Coreopsis
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 3691a86d05def4641bc0fd066f4e0eea, type: 3}
+  m_Prefab: {fileID: 379256734582370124, guid: 566e24b196817b640910b5fe6ee3a6f6, type: 3}
+  m_Description: Yellow early sunrise
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 5
+  m_CanBuyBack: 0
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 5
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &6224895360770312772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -480,6 +751,50 @@ MonoBehaviour:
     modifiers: []
   ingredients: []
   properties: []
+--- !u!114 &7296480038318277723
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Tulip Seeds
+  m_EditorClassIdentifier: 
+  m_Id: b1d8b486-519d-4c82-bb78-79c29b85a165
+  m_ItemName: Tulip Seeds
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: d83f282580e63f34ab22416f2bc1cfb3, type: 3}
+  m_Prefab: {fileID: 3100803409791156570, guid: d67da382297e9bb4c90ae685186400e5,
+    type: 3}
+  m_Description: Seeds for red tulips
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 1
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 1
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 10
+  m_MaxStack: 10
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &8048573061241985464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -508,6 +823,50 @@ MonoBehaviour:
   m_SellCurrency: {fileID: -9008354556261382020}
   m_Stack: 1
   m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+--- !u!114 &8723047200007963551
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Yellow Coreopsis Seeds
+  m_EditorClassIdentifier: 
+  m_Id: 00aaaad6-190d-4461-a7f0-2273c014675f
+  m_ItemName: Yellow Coreopsis Seeds
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: caab6802f5435d245af83f1f8f13f91b, type: 3}
+  m_Prefab: {fileID: 3131914137566282753, guid: cd7f076b41fb39f4da113ee5ffeb3056,
+    type: 3}
+  m_Description: Seeds for yellow coreopsis
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 1
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 1
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 10
+  m_MaxStack: 10
   m_IsDroppable: 1
   m_DropSound: {fileID: 0}
   m_OverridePrefab: {fileID: 0}

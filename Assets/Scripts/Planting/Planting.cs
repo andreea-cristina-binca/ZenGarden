@@ -21,6 +21,7 @@ public class Planting : MonoBehaviour
         {
             if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out RaycastHit raycastHit, interactDistance, interactLayerMask))
             {
+                Debug.Log(raycastHit.transform);
                 if (raycastHit.transform.TryGetComponent(out ShowPlant showPlant))
                 {
                     if (planted)
