@@ -20,31 +20,34 @@ public class Planting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            float playerHeight = 2.0f;
-            float playerRadius = 1.0f;
-            
-            if(Physics.CapsuleCast(playerTransform.position, playerTransform.position + Vector3.up * playerHeight, playerRadius, playerTransform.forward, out RaycastHit raycast))
+            if (Physics.Raycast(playerTransform.position + new Vector3(0, 0.1f, 0), playerTransform.forward, out RaycastHit raycastHit, interactDistance, interactLayerMask))
             {
-                Debug.Log(raycast.transform);
-            }
-            
-            if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out RaycastHit raycastHit, interactDistance, interactLayerMask))
-            {
-                // Debug.Log(raycastHit.transform);
+                //Debug.Log(playerTransform.position);
+                //Debug.Log(raycastHit.transform.TryGetComponent(out ShowPlant showPlant));
+                //if(showPlant)
                 if (raycastHit.transform.TryGetComponent(out ShowPlant showPlant))
                 {
-                    if (planted)
-                    {
-                        if (showPlant.Harvest())
-                            planted = false;
-                    }
-                    else
-                    {
-                        if (showPlant.Plant())
-                            planted = true;
-                    }
+                    showPlant.Interact();
                 }
             }
+
+            //if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out RaycastHit raycastHit, interactDistance, interactLayerMask))
+            //{
+            //    // Debug.Log(raycastHit.transform);
+            //    if (raycastHit.transform.TryGetComponent(out ShowPlant showPlant))
+            //    {
+            //        if (planted)
+            //        {
+            //            if (showPlant.Harvest())
+            //                planted = false;
+            //        }
+            //        else
+            //        {
+            //            if (showPlant.Plant())
+            //                planted = true;
+            //        }
+            //    }
+            //}
         }
     }
 }

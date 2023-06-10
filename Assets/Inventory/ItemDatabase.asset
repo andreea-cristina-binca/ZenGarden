@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: Dirt
+  m_Name: Dirty
   m_EditorClassIdentifier: 
   m_Id: 9b615d0b-7aae-454a-ba30-230ff6ffaf54
   m_ItemName: Dirty
@@ -441,7 +441,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: 
+  m_Name: Stand
   m_EditorClassIdentifier: 
   m_Id: 34da5ac6-c985-49ea-a31a-85e4f92ea637
   m_ItemName: Stand
@@ -605,7 +605,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: 
+  m_Name: Dirt
   m_EditorClassIdentifier: 
   m_Id: f4a2ecc5-4329-42f9-8bee-182eac18c14b
   m_ItemName: Dirt
@@ -748,7 +748,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: 
+  m_Name: Pot
   m_EditorClassIdentifier: 
   m_Id: da88531a-e3a5-451d-9205-fcc79791ce17
   m_ItemName: Pot
@@ -939,7 +939,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: Pot
+  m_Name: Potplant
   m_EditorClassIdentifier: 
   m_Id: a5dbc09d-4abf-4435-b7e5-3e01c5f52be6
   m_ItemName: Potplant

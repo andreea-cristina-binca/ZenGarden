@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class CamViewChanger : MonoBehaviour
 {
-    [SerializeField] private Camera firstPerson;
-    [SerializeField] private Camera thirdPerson;
+    public Camera firstPerson;
+    public Camera thirdPerson;
 
-    private bool isFirst;
+    public bool isFirst;
 
     void Start()
     {
@@ -35,12 +35,20 @@ public class CamViewChanger : MonoBehaviour
     private void SetToFirstPerson()
     {
         firstPerson.enabled = true;
+        firstPerson.GetComponent<MouseLook>().enabled = true;
+
         thirdPerson.enabled = false;
+        thirdPerson.GetComponent<MouseOrbit>().enabled = false;
+        thirdPerson.GetComponent<MouseLook>().enabled = false;
     }
 
     private void SetToThirdPerson()
     {
         firstPerson.enabled = false;
+        firstPerson.GetComponent<MouseLook>().enabled = false;
+
         thirdPerson.enabled = true;
+        thirdPerson.GetComponent<MouseOrbit>().enabled = true;
+        thirdPerson.GetComponent<MouseLook>().enabled = true;
     }
 }

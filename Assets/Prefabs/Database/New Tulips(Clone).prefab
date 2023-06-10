@@ -125,7 +125,7 @@ MonoBehaviour:
       type: {class: LookAtTrigger, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.LookAtTrigger
-        m_Enabled: 1
+        m_Enabled: 0
         m_Speed: 15
 --- !u!114 &2580115788712115796
 MonoBehaviour:

@@ -13,6 +13,7 @@ public class ShowPlant : MonoBehaviour
     private Transform plantTransform;
     private TimerManager timer;
     private bool planted;
+    private bool harvestable;
 
     private void Start()
     {
@@ -23,6 +24,7 @@ public class ShowPlant : MonoBehaviour
 
         timerObject.SetActive(false);
         planted = false;
+        harvestable = false;
     }
 
     private void Update()
@@ -37,12 +39,27 @@ public class ShowPlant : MonoBehaviour
                 plantTransform.localPosition = Vector3.zero;
 
                 planted = false;
+                harvestable = true;
             }
         }
 
         if (plantTransform == null)
         {
             timerObject.SetActive(false);
+        }
+    }
+
+    public void Interact()
+    {
+        if (harvestable)
+        {
+            if(Harvest())
+                Debug.Log("Harvested");
+        }
+        else if (!planted && !harvestable)
+        {
+            if (Plant())
+                Debug.Log("Planted");
         }
     }
 
@@ -55,6 +72,7 @@ public class ShowPlant : MonoBehaviour
 
             timerObject.SetActive(true);
             planted = true;
+            harvestable = false;
 
             return true;
         }
@@ -64,12 +82,20 @@ public class ShowPlant : MonoBehaviour
 
     public bool Harvest()
     {
-        if (timer.GetHoursLeft() == 0 && timer.GetMinutesLeft() == 0 && timer.GetSecondsLeft() == 0)
+        if (harvestable == true)
         {
-            timerObject.SetActive(false);
-            planted = false;
-            
-            return true;
+            if (timer.GetHoursLeft() == 0 && timer.GetMinutesLeft() == 0 && timer.GetSecondsLeft() == 0)
+            {
+                //Destroy(plantTransform.gameObject);
+
+                timerObject.SetActive(false);
+                planted = false;
+                harvestable = false;
+
+                //Debug.Log(plantTransform.gameObject);
+
+                return true;
+            }
         }
 
         return false;
