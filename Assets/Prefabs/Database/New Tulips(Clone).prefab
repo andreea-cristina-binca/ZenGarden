@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 2839146594565518051}
   m_Layer: 0
   m_Name: New Tulips(Clone)
-  m_TagString: Untagged
+  m_TagString: Tulip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,7 +135,7 @@ MonoBehaviour:
       type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.CrossFade
-        m_Enabled: 1
+        m_Enabled: 0
         m_Target: 1
         m_AnimatorState: Interact
         m_TransitionDuration: 2

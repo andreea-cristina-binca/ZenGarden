@@ -1,19 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DevionGames;
 
 public class Planting : MonoBehaviour
 {
     [SerializeField] private Transform playerTransform;
-    [SerializeField] private Transform playerCameraTransform;
+    [SerializeField] private Transform playerHoldingPoint;
+    [SerializeField] private LayerMask seedLayerMask;
     [SerializeField] private LayerMask interactLayerMask;
     [SerializeField] private float interactDistance;
 
-    private bool planted;
+    private GameObject isHolding;
 
     private void Start()
     {
-        planted = false;
+        isHolding = null;
     }
 
     void Update()
@@ -22,32 +24,22 @@ public class Planting : MonoBehaviour
         {
             if (Physics.Raycast(playerTransform.position + new Vector3(0, 0.1f, 0), playerTransform.forward, out RaycastHit raycastHit, interactDistance, interactLayerMask))
             {
-                //Debug.Log(playerTransform.position);
-                //Debug.Log(raycastHit.transform.TryGetComponent(out ShowPlant showPlant));
-                //if(showPlant)
                 if (raycastHit.transform.TryGetComponent(out ShowPlant showPlant))
                 {
-                    showPlant.Interact();
+                    isHolding = showPlant.Interact(isHolding);
                 }
             }
 
-            //if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out RaycastHit raycastHit, interactDistance, interactLayerMask))
-            //{
-            //    // Debug.Log(raycastHit.transform);
-            //    if (raycastHit.transform.TryGetComponent(out ShowPlant showPlant))
-            //    {
-            //        if (planted)
-            //        {
-            //            if (showPlant.Harvest())
-            //                planted = false;
-            //        }
-            //        else
-            //        {
-            //            if (showPlant.Plant())
-            //                planted = true;
-            //        }
-            //    }
-            //}
+            if (Physics.Raycast(playerTransform.position + new Vector3(0, 0.1f, 0), playerTransform.forward, out RaycastHit raycastHitSeed, interactDistance, seedLayerMask))
+            {
+                Debug.Log(raycastHitSeed.transform.gameObject);
+
+                if (!isHolding)
+                {
+                    isHolding = raycastHitSeed.transform.gameObject.GetComponent<SeedsManager>().GetSeed(raycastHitSeed.transform.gameObject, playerHoldingPoint);
+                }
+            }
+            
         }
     }
 }

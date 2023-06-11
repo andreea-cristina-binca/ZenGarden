@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CamViewChanger : MonoBehaviour
 {
     public Camera firstPerson;
     public Camera thirdPerson;
+    public GameObject crosshair;
 
     public bool isFirst;
 
@@ -40,6 +42,8 @@ public class CamViewChanger : MonoBehaviour
         thirdPerson.enabled = false;
         thirdPerson.GetComponent<MouseOrbit>().enabled = false;
         thirdPerson.GetComponent<MouseLook>().enabled = false;
+
+        crosshair.GetComponent<Image>().enabled = true;
     }
 
     private void SetToThirdPerson()
@@ -50,5 +54,7 @@ public class CamViewChanger : MonoBehaviour
         thirdPerson.enabled = true;
         thirdPerson.GetComponent<MouseOrbit>().enabled = true;
         thirdPerson.GetComponent<MouseLook>().enabled = true;
+
+        crosshair.GetComponent<Image>().enabled = false;
     }
 }

@@ -15,9 +15,11 @@ GameObject:
   - component: {fileID: 2031682501244037034}
   - component: {fileID: 1619906681130582118}
   - component: {fileID: 3014009175906165127}
-  m_Layer: 0
+  - component: {fileID: 7685409937792487360}
+  - component: {fileID: 24965316542464260}
+  m_Layer: 7
   m_Name: New daffodil_seed(Clone)
-  m_TagString: Untagged
+  m_TagString: Daffodil
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,13 +31,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 466647449347511606}
-  m_LocalRotation: {x: 0.00000014106499, y: 0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 0.29988724, y: 0.29988724, z: 0.29988724}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.15000002, y: 0.15000002, z: 0.15000002}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &183526593525836788
 MeshFilter:
@@ -101,14 +103,75 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delegates: []
   useDistance: 1.2
-  triggerType: 9
-  key: 102
+  triggerType: 1
+  key: 101
   actionTemplate: {fileID: 0}
-  actions: []
+  actions:
+  - rid: 8031577948653092867
+  - rid: 1523893482780885014
+  - rid: 1523893482780885020
+  - rid: 1523893464419794954
+  - rid: 8031577948653092868
+  - rid: 1523893482780885015
+  - rid: 1523893482780885021
   m_Interruptable: 0
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1523893464419794954
+      type: {class: ShowProgressbar, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
+      data:
+        m_Type: DevionGames.InventorySystem.ShowProgressbar
+        m_Enabled: 0
+        m_WidgetName: General Progressbar
+        m_Title: picking up
+        m_Duration: 3
+    - rid: 1523893482780885014
+      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.SetEnabled
+        m_Enabled: 0
+        m_Target: 1
+        m_ComponentName: Player
+        m_Enable: 0
+    - rid: 1523893482780885015
+      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.SetEnabled
+        m_Enabled: 0
+        m_Target: 1
+        m_ComponentName: Player
+        m_Enable: 1
+    - rid: 1523893482780885020
+      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.SetEnabled
+        m_Enabled: 0
+        m_Target: 2
+        m_ComponentName: MouseLook
+        m_Enable: 0
+    - rid: 1523893482780885021
+      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.SetEnabled
+        m_Enabled: 0
+        m_Target: 2
+        m_ComponentName: MouseLook
+        m_Enable: 1
+    - rid: 8031577948653092867
+      type: {class: CanPickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
+      data:
+        m_Type: DevionGames.InventorySystem.CanPickup
+        m_Enabled: 1
+        m_WindowName: Inventory
+    - rid: 8031577948653092868
+      type: {class: Pickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
+      data:
+        m_Type: DevionGames.InventorySystem.Pickup
+        m_Enabled: 1
+        m_WindowName: Inventory
+        m_DestroyWhenEmpty: 1
+        m_Amount: 1
 --- !u!114 &2031682501244037034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,8 +187,12 @@ MonoBehaviour:
   saveable: 1
   m_Items:
   - {fileID: -1328188924954542639, guid: c003d55480015c24687277a414bf728a, type: 2}
-  m_Amounts: 01000000
+  - {fileID: -1328188924954542639, guid: c003d55480015c24687277a414bf728a, type: 2}
+  - {fileID: -1328188924954542639, guid: c003d55480015c24687277a414bf728a, type: 2}
+  m_Amounts: 0a0000000a0000000a000000
   m_Modifiers:
+  - modifiers: []
+  - modifiers: []
   - modifiers: []
   onChange:
     m_PersistentCalls:
@@ -139,7 +206,7 @@ MeshCollider:
   m_GameObject: {fileID: 466647449347511606}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -158,5 +225,39 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!136 &7685409937792487360
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466647449347511606}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 3.3
+  m_Height: 6
+  m_Direction: 1
+  m_Center: {x: 0, y: 3, z: 0}
+--- !u!114 &24965316542464260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466647449347511606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b325fa2c4b8cd0e40b75cf58c93a9e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tulipSeed: {fileID: 296107391948926782, guid: 55c64c33deff7214080617e49293dda6,
+    type: 3}
+  roseSeed: {fileID: 8254538039152588346, guid: add98ba51d9bc0447abbaa87079e77c6,
+    type: 3}
+  daffodilSeed: {fileID: 5639974240892729863, guid: e09ba3c49ca0d1140afd276a9e01de87,
+    type: 3}
+  yellowCoreSeed: {fileID: 3192136709002642208, guid: bc978fecded0711478fecf8f49da8696,
+    type: 3}

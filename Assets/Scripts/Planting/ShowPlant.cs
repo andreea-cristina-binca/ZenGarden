@@ -5,11 +5,15 @@ using UnityEngine;
 
 public class ShowPlant : MonoBehaviour
 {
-    [SerializeField] private PlantSO plantObject;
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private GameObject timerObject;
     [SerializeField] private PlantSO plantStartObject;
+    [SerializeField] private PlantSO tulipPlant;
+    [SerializeField] private PlantSO rosePlant;
+    [SerializeField] private PlantSO daffodilPlant;
+    [SerializeField] private PlantSO yellowCorePlant;
 
+    private PlantSO plantObject;
     private Transform plantTransform;
     private TimerManager timer;
     private bool planted;
@@ -18,9 +22,6 @@ public class ShowPlant : MonoBehaviour
     private void Start()
     {
         timer = timerObject.GetComponent<TimerManager>();
-        timer.SetSeconds(plantObject.seconds);
-        timer.SetMinutes(plantObject.minutes);
-        timer.SetHours(plantObject.hours);
 
         timerObject.SetActive(false);
         planted = false;
@@ -49,18 +50,45 @@ public class ShowPlant : MonoBehaviour
         }
     }
 
-    public void Interact()
+    public GameObject Interact(GameObject isHolding)
     {
+        if (isHolding)
+        {
+            switch (isHolding.tag)
+            {
+                case "Tulip":
+                    plantObject = tulipPlant;
+                    break;
+                case "Rose":
+                    plantObject = rosePlant;
+                    break;
+                case "Daffodil":
+                    plantObject = daffodilPlant;
+                    break;
+                case "YellowCore":
+                    plantObject = yellowCorePlant;
+                    break;
+                default:
+                    break;
+            }
+
+            if (!planted && !harvestable)
+            {
+                if (Plant())
+                {
+                    Debug.Log("Planted");
+                    Destroy(isHolding.gameObject);
+                }
+            }
+        }
+
         if (harvestable)
         {
             if(Harvest())
                 Debug.Log("Harvested");
         }
-        else if (!planted && !harvestable)
-        {
-            if (Plant())
-                Debug.Log("Planted");
-        }
+
+        return isHolding;
     }
 
     public bool Plant()
@@ -70,6 +98,9 @@ public class ShowPlant : MonoBehaviour
             plantTransform = Instantiate(plantStartObject.prefab, spawnPoint);
             plantTransform.localPosition = Vector3.zero;
 
+            timer.SetSeconds(plantObject.seconds);
+            timer.SetMinutes(plantObject.minutes);
+            timer.SetHours(plantObject.hours);
             timerObject.SetActive(true);
             planted = true;
             harvestable = false;
