@@ -103,9 +103,9 @@ MonoBehaviour:
       type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.CrossFade
-        m_Enabled: 0
+        m_Enabled: 1
         m_Target: 1
-        m_AnimatorState: Interact
+        m_AnimatorState: InteractSquating
         m_TransitionDuration: 2
     - rid: 5820654266139541657
       type: {class: Wait, ns: DevionGames, asm: DevionGames.Triggers}

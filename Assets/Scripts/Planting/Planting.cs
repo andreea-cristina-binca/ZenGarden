@@ -5,6 +5,8 @@ using DevionGames;
 
 public class Planting : MonoBehaviour
 {
+    public Animator animator;
+
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Transform playerHoldingPoint;
     [SerializeField] private LayerMask seedLayerMask;
@@ -12,10 +14,16 @@ public class Planting : MonoBehaviour
     [SerializeField] private float interactDistance;
 
     private GameObject isHolding;
+    private bool plantedSquating;
+    private bool plantedStanding;
+    private bool pickedUpSeeds;
 
     private void Start()
     {
         isHolding = null;
+
+        plantedSquating = false;
+        pickedUpSeeds = false;
     }
 
     void Update()
@@ -26,7 +34,17 @@ public class Planting : MonoBehaviour
             {
                 if (raycastHit.transform.TryGetComponent(out ShowPlant showPlant))
                 {
+                    GameObject wasHolding = isHolding;
                     isHolding = showPlant.Interact(isHolding);
+                    Debug.Log(isHolding);
+
+                    if(wasHolding != null && isHolding == null)
+                    {
+                        if (raycastHit.transform.gameObject.tag == "PlantStand")
+                            plantedStanding = true;
+                        else
+                            plantedSquating = true;
+                    }
                 }
             }
 
@@ -37,9 +55,40 @@ public class Planting : MonoBehaviour
                 if (!isHolding)
                 {
                     isHolding = raycastHitSeed.transform.gameObject.GetComponent<SeedsManager>().GetSeed(raycastHitSeed.transform.gameObject, playerHoldingPoint);
+
+                    if (isHolding != null)
+                    {
+                        pickedUpSeeds = true;
+                    }
                 }
             }
-            
+        }
+        
+        //Debug.Log(plantedSquating);
+        //Debug.Log(pickedUpSeeds);
+        if (plantedSquating || plantedStanding || pickedUpSeeds)
+        {
+            if (plantedStanding)
+                animator.SetBool("isIntStanding", true);
+            else
+                animator.SetBool("isIntSquating", true);
+
+            //Debug.Log(animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
+            if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
+            {
+                //Debug.Log("done squat animation");
+                if (plantedSquating)
+                    plantedSquating = false;
+                if (plantedStanding)
+                    plantedStanding = false;
+                if (pickedUpSeeds)
+                    pickedUpSeeds = false;
+            }
+        }
+        else
+        {
+            animator.SetBool("isIntStanding", false);
+            animator.SetBool("isIntSquating", false);
         }
     }
 }

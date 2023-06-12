@@ -851,7 +851,7 @@ Transform:
   - {fileID: 1111801969}
   - {fileID: 6515877542808822961}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5797472105825343337
 MonoBehaviour:
@@ -889,7 +889,7 @@ MonoBehaviour:
         m_Enabled: 1
         m_WidgetName: General Progressbar
         m_Title: picking up
-        m_Duration: 3
+        m_Duration: 1
     - rid: 1523893482780885014
       type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
       data:
@@ -910,7 +910,7 @@ MonoBehaviour:
       type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.SetEnabled
-        m_Enabled: 1
+        m_Enabled: 0
         m_Target: 2
         m_ComponentName: MouseLook
         m_Enable: 0
@@ -1444,7 +1444,7 @@ PrefabInstance:
     - target: {fileID: 6515877541891681768, guid: 7f872f0fcfcdf3940819c24ebed92791,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6515877541891681768, guid: 7f872f0fcfcdf3940819c24ebed92791,
         type: 3}

@@ -78,14 +78,17 @@ public class ShowPlant : MonoBehaviour
                 {
                     Debug.Log("Planted");
                     Destroy(isHolding.gameObject);
+                    isHolding = null;
                 }
             }
         }
 
         if (harvestable)
         {
-            if(Harvest())
+            if (Harvest())
+            {
                 Debug.Log("Harvested");
+            }
         }
 
         return isHolding;
@@ -117,13 +120,9 @@ public class ShowPlant : MonoBehaviour
         {
             if (timer.GetHoursLeft() == 0 && timer.GetMinutesLeft() == 0 && timer.GetSecondsLeft() == 0)
             {
-                //Destroy(plantTransform.gameObject);
-
                 timerObject.SetActive(false);
                 planted = false;
                 harvestable = false;
-
-                //Debug.Log(plantTransform.gameObject);
 
                 return true;
             }

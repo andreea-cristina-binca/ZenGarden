@@ -4394,7 +4394,7 @@ MonoBehaviour:
         m_Enabled: 1
         m_WidgetName: General Progressbar
         m_Title: picking up
-        m_Duration: 3
+        m_Duration: 1
     - rid: 1523893482780885014
       type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
       data:
@@ -4415,7 +4415,7 @@ MonoBehaviour:
       type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.SetEnabled
-        m_Enabled: 1
+        m_Enabled: 0
         m_Target: 2
         m_ComponentName: MouseLook
         m_Enable: 0

@@ -135,9 +135,9 @@ MonoBehaviour:
       type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.CrossFade
-        m_Enabled: 0
+        m_Enabled: 1
         m_Target: 1
-        m_AnimatorState: Interact
+        m_AnimatorState: InteractSquating
         m_TransitionDuration: 2
     - rid: 5820654266139541657
       type: {class: Wait, ns: DevionGames, asm: DevionGames.Triggers}
@@ -404,7 +404,7 @@ Transform:
   m_GameObject: {fileID: 6522762004561570081}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.25, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3748875395582457428}
