@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6517085186457603839}
   m_Layer: 0
   m_Name: YellowCore
-  m_TagString: Untagged
+  m_TagString: YellowCore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3918309866797929053}
   m_Layer: 0
   m_Name: New Roses(Clone)
-  m_TagString: Untagged
+  m_TagString: Rose
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70,7 +70,11 @@ MonoBehaviour:
   actions:
   - rid: 1523893529703874596
   - rid: 5820654173818978393
+  - rid: 5820654266139541660
+  - rid: 5820654266139541654
+  - rid: 5820654266139541657
   - rid: 1523893529703874597
+  - rid: 5820654266139541661
   m_Interruptable: 0
   references:
     version: 2
@@ -93,8 +97,38 @@ MonoBehaviour:
       type: {class: LookAtTrigger, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.LookAtTrigger
-        m_Enabled: 1
+        m_Enabled: 0
         m_Speed: 15
+    - rid: 5820654266139541654
+      type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.CrossFade
+        m_Enabled: 1
+        m_Target: 1
+        m_AnimatorState: InteractSquating
+        m_TransitionDuration: 2
+    - rid: 5820654266139541657
+      type: {class: Wait, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.Wait
+        m_Enabled: 1
+        duration: 2
+    - rid: 5820654266139541660
+      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.SetEnabled
+        m_Enabled: 1
+        m_Target: 1
+        m_ComponentName: Player
+        m_Enable: 0
+    - rid: 5820654266139541661
+      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.SetEnabled
+        m_Enabled: 1
+        m_Target: 1
+        m_ComponentName: Player
+        m_Enable: 1
 --- !u!114 &6999919648953906893
 MonoBehaviour:
   m_ObjectHideFlags: 0

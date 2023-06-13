@@ -1,49 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9025416373191591077
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: Dirt
-  m_EditorClassIdentifier: 
-  m_Id: 9b615d0b-7aae-454a-ba30-230ff6ffaf54
-  m_ItemName: Dirty
-  m_UseItemNameAsDisplayName: 1
-  m_DisplayName: New Item
-  m_Icon: {fileID: 21300000, guid: b2fc14f8df7b69c449d3262bec0767b6, type: 3}
-  m_Prefab: {fileID: 5186678643238212491, guid: 804268d39e3b0f84ba5b3fadbd8531cf,
-    type: 3}
-  m_Description: A pile of freshly fertilized ground, good for planting
-  m_Category: {fileID: -8714117849886982192}
-  m_IsSellable: 0
-  m_BuyPrice: 0
-  m_CanBuyBack: 1
-  m_BuyCurrency: {fileID: -9008354556261382020}
-  m_SellPrice: 0
-  m_SellCurrency: {fileID: -9008354556261382020}
-  m_Stack: 1
-  m_MaxStack: 1
-  m_IsDroppable: 1
-  m_DropSound: {fileID: 0}
-  m_OverridePrefab: {fileID: 0}
-  m_IsCraftable: 0
-  m_CraftingDuration: 2
-  m_UseCraftingSkill: 0
-  m_SkillWindow: Skills
-  m_CraftingSkill: {fileID: 0}
-  m_RemoveIngredientsWhenFailed: 0
-  m_MinCraftingSkillValue: 0
-  m_CraftingAnimatorState: Blacksmithy
-  m_CraftingModifier:
-    modifiers: []
-  ingredients: []
-  properties: []
 --- !u!114 &-9008354556261382020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -441,7 +397,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: 
+  m_Name: Stand
   m_EditorClassIdentifier: 
   m_Id: 34da5ac6-c985-49ea-a31a-85e4f92ea637
   m_ItemName: Stand
@@ -451,50 +407,6 @@ MonoBehaviour:
   m_Prefab: {fileID: 3531320213770124386, guid: 4d30cdefdd6939d409c7ac9a1582afb7,
     type: 3}
   m_Description: A stand for planting
-  m_Category: {fileID: -8714117849886982192}
-  m_IsSellable: 0
-  m_BuyPrice: 0
-  m_CanBuyBack: 1
-  m_BuyCurrency: {fileID: -9008354556261382020}
-  m_SellPrice: 0
-  m_SellCurrency: {fileID: -9008354556261382020}
-  m_Stack: 1
-  m_MaxStack: 1
-  m_IsDroppable: 1
-  m_DropSound: {fileID: 0}
-  m_OverridePrefab: {fileID: 0}
-  m_IsCraftable: 0
-  m_CraftingDuration: 2
-  m_UseCraftingSkill: 0
-  m_SkillWindow: Skills
-  m_CraftingSkill: {fileID: 0}
-  m_RemoveIngredientsWhenFailed: 0
-  m_MinCraftingSkillValue: 0
-  m_CraftingAnimatorState: Blacksmithy
-  m_CraftingModifier:
-    modifiers: []
-  ingredients: []
-  properties: []
---- !u!114 &-4401946254645871456
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: Plant Stand
-  m_EditorClassIdentifier: 
-  m_Id: f8172eb4-9953-469f-b290-8a819af40d17
-  m_ItemName: Plant Stand
-  m_UseItemNameAsDisplayName: 1
-  m_DisplayName: New Item
-  m_Icon: {fileID: 21300000, guid: afbc2b8ea328e324abf379e28a48ae33, type: 3}
-  m_Prefab: {fileID: 5386181738362230560, guid: 155b840ec284fd14283d68211a222762,
-    type: 3}
-  m_Description: A stand for plants
   m_Category: {fileID: -8714117849886982192}
   m_IsSellable: 0
   m_BuyPrice: 0
@@ -605,7 +517,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: 
+  m_Name: Dirt
   m_EditorClassIdentifier: 
   m_Id: f4a2ecc5-4329-42f9-8bee-182eac18c14b
   m_ItemName: Dirt
@@ -651,8 +563,6 @@ MonoBehaviour:
   m_Name: ItemDatabase
   m_EditorClassIdentifier: 
   items:
-  - {fileID: 8048573061241985464}
-  - {fileID: 6749398735700574335}
   - {fileID: -7479548766836001075}
   - {fileID: -8595991825680623017}
   - {fileID: -8480780831047694530}
@@ -661,8 +571,6 @@ MonoBehaviour:
   - {fileID: 914045514894526987}
   - {fileID: -1328188924954542639}
   - {fileID: 8723047200007963551}
-  - {fileID: -4401946254645871456}
-  - {fileID: -9025416373191591077}
   - {fileID: 4619771673954617027}
   - {fileID: -4920201477338114218}
   - {fileID: -944683790886301280}
@@ -748,7 +656,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: 
+  m_Name: Pot
   m_EditorClassIdentifier: 
   m_Id: da88531a-e3a5-451d-9205-fcc79791ce17
   m_ItemName: Pot
@@ -842,49 +750,6 @@ MonoBehaviour:
   sellPriceTooltipName: Sell Price Tooltip
   stackName: Stack
   notificationName: Notification
---- !u!114 &6749398735700574335
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: Echinacea
-  m_EditorClassIdentifier: 
-  m_Id: 84c3f0f8-bd52-454f-8f71-b60c081b95e4
-  m_ItemName: Echinacea
-  m_UseItemNameAsDisplayName: 1
-  m_DisplayName: New Item
-  m_Icon: {fileID: 21300000, guid: 456447fb40658bc4eb872ea6e332f643, type: 3}
-  m_Prefab: {fileID: 570254984458370730, guid: 2030eb1921f09134583e12d78b16c1ca, type: 3}
-  m_Description: Flowery flower
-  m_Category: {fileID: -8714117849886982192}
-  m_IsSellable: 1
-  m_BuyPrice: 1
-  m_CanBuyBack: 1
-  m_BuyCurrency: {fileID: -9008354556261382020}
-  m_SellPrice: 1
-  m_SellCurrency: {fileID: -9008354556261382020}
-  m_Stack: 1
-  m_MaxStack: 1
-  m_IsDroppable: 1
-  m_DropSound: {fileID: 0}
-  m_OverridePrefab: {fileID: 0}
-  m_IsCraftable: 0
-  m_CraftingDuration: 2
-  m_UseCraftingSkill: 0
-  m_SkillWindow: Skills
-  m_CraftingSkill: {fileID: 0}
-  m_RemoveIngredientsWhenFailed: 0
-  m_MinCraftingSkillValue: 0
-  m_CraftingAnimatorState: Blacksmithy
-  m_CraftingModifier:
-    modifiers: []
-  ingredients: []
-  properties: []
 --- !u!114 &7296480038318277723
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -911,49 +776,6 @@ MonoBehaviour:
   m_CanBuyBack: 1
   m_BuyCurrency: {fileID: -9008354556261382020}
   m_SellPrice: 1
-  m_SellCurrency: {fileID: -9008354556261382020}
-  m_Stack: 10
-  m_MaxStack: 10
-  m_IsDroppable: 1
-  m_DropSound: {fileID: 0}
-  m_OverridePrefab: {fileID: 0}
-  m_IsCraftable: 0
-  m_CraftingDuration: 2
-  m_UseCraftingSkill: 0
-  m_SkillWindow: Skills
-  m_CraftingSkill: {fileID: 0}
-  m_RemoveIngredientsWhenFailed: 0
-  m_MinCraftingSkillValue: 0
-  m_CraftingAnimatorState: Blacksmithy
-  m_CraftingModifier:
-    modifiers: []
-  ingredients: []
-  properties: []
---- !u!114 &8048573061241985464
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
-  m_Name: Pot
-  m_EditorClassIdentifier: 
-  m_Id: a5dbc09d-4abf-4435-b7e5-3e01c5f52be6
-  m_ItemName: Potplant
-  m_UseItemNameAsDisplayName: 1
-  m_DisplayName: New Item
-  m_Icon: {fileID: 21300000, guid: af2a84a8c6ea3dc4b99c38b4a571b5b4, type: 3}
-  m_Prefab: {fileID: 961807357963095683, guid: 0b420e29eb53d7f44a650451d91914bc, type: 3}
-  m_Description: 
-  m_Category: {fileID: -8714117849886982192}
-  m_IsSellable: 0
-  m_BuyPrice: 5
-  m_CanBuyBack: 1
-  m_BuyCurrency: {fileID: -9008354556261382020}
-  m_SellPrice: 5
   m_SellCurrency: {fileID: -9008354556261382020}
   m_Stack: 1
   m_MaxStack: 1
