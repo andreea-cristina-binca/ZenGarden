@@ -64,25 +64,24 @@ public class Planting : MonoBehaviour
             }
         }
         
-        //Debug.Log(plantedSquating);
-        //Debug.Log(pickedUpSeeds);
         if (plantedSquating || plantedStanding || pickedUpSeeds)
         {
             if (plantedStanding)
                 animator.SetBool("isIntStanding", true);
             else
                 animator.SetBool("isIntSquating", true);
+            gameObject.GetComponent<Player>().enabled = false;
 
-            //Debug.Log(animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
             if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
             {
-                //Debug.Log("done squat animation");
                 if (plantedSquating)
                     plantedSquating = false;
                 if (plantedStanding)
                     plantedStanding = false;
                 if (pickedUpSeeds)
                     pickedUpSeeds = false;
+
+                gameObject.GetComponent<Player>().enabled = true;
             }
         }
         else

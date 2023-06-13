@@ -74,10 +74,5 @@ public class Player : MonoBehaviour
             else
                 animator.SetBool("isJumping", false);
         }
-
-        //if (Input.GetKeyDown(KeyCode.F))
-        //    animator.SetBool("isIntSquating", true);
-        //else
-        //    animator.SetBool("isIntSquating", false);
     }
 }
