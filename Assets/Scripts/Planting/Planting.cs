@@ -36,7 +36,6 @@ public class Planting : MonoBehaviour
                 {
                     GameObject wasHolding = isHolding;
                     isHolding = showPlant.Interact(isHolding);
-                    Debug.Log(isHolding);
 
                     if(wasHolding != null && isHolding == null)
                     {
@@ -50,8 +49,6 @@ public class Planting : MonoBehaviour
 
             if (Physics.Raycast(playerTransform.position + new Vector3(0, 0.1f, 0), playerTransform.forward, out RaycastHit raycastHitSeed, interactDistance, seedLayerMask))
             {
-                Debug.Log(raycastHitSeed.transform.gameObject);
-
                 if (!isHolding)
                 {
                     isHolding = raycastHitSeed.transform.gameObject.GetComponent<SeedsManager>().GetSeed(raycastHitSeed.transform.gameObject, playerHoldingPoint);
@@ -70,6 +67,7 @@ public class Planting : MonoBehaviour
                 animator.SetBool("isIntStanding", true);
             else
                 animator.SetBool("isIntSquating", true);
+            
             gameObject.GetComponent<Player>().enabled = false;
 
             if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
