@@ -73,7 +73,7 @@ MonoBehaviour:
   - rid: 5820654173818978393
   - rid: 5820654266139541660
   - rid: 5820654266139541654
-  - rid: 5820654266139541657
+  - rid: 5820654355098894480
   - rid: 1523893529703874597
   - rid: 5820654266139541661
   m_Interruptable: 0
@@ -108,12 +108,6 @@ MonoBehaviour:
         m_Target: 1
         m_AnimatorState: InteractSquating
         m_TransitionDuration: 2
-    - rid: 5820654266139541657
-      type: {class: Wait, ns: DevionGames, asm: DevionGames.Triggers}
-      data:
-        m_Type: DevionGames.Wait
-        m_Enabled: 1
-        duration: 2
     - rid: 5820654266139541660
       type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
       data:
@@ -130,6 +124,14 @@ MonoBehaviour:
         m_Target: 1
         m_ComponentName: Player
         m_Enable: 1
+    - rid: 5820654355098894480
+      type: {class: ShowProgressbar, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
+      data:
+        m_Type: DevionGames.InventorySystem.ShowProgressbar
+        m_Enabled: 1
+        m_WidgetName: General Progressbar
+        m_Title: harvesting...
+        m_Duration: 2
 --- !u!114 &5299688465420837267
 MonoBehaviour:
   m_ObjectHideFlags: 0

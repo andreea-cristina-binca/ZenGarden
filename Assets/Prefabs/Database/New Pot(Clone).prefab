@@ -873,11 +873,10 @@ MonoBehaviour:
   actions:
   - rid: 8031577948653092867
   - rid: 1523893482780885014
-  - rid: 1523893482780885020
+  - rid: 5820654355098894435
   - rid: 1523893464419794954
   - rid: 8031577948653092868
   - rid: 1523893482780885015
-  - rid: 1523893482780885021
   m_Interruptable: 0
   references:
     version: 2
@@ -889,7 +888,7 @@ MonoBehaviour:
         m_Enabled: 1
         m_WidgetName: General Progressbar
         m_Title: picking up
-        m_Duration: 1
+        m_Duration: 2
     - rid: 1523893482780885014
       type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
       data:
@@ -906,22 +905,14 @@ MonoBehaviour:
         m_Target: 1
         m_ComponentName: Player
         m_Enable: 1
-    - rid: 1523893482780885020
-      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
+    - rid: 5820654355098894435
+      type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
       data:
-        m_Type: DevionGames.SetEnabled
-        m_Enabled: 0
-        m_Target: 2
-        m_ComponentName: MouseLook
-        m_Enable: 0
-    - rid: 1523893482780885021
-      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
-      data:
-        m_Type: DevionGames.SetEnabled
+        m_Type: DevionGames.CrossFade
         m_Enabled: 1
-        m_Target: 2
-        m_ComponentName: MouseLook
-        m_Enable: 1
+        m_Target: 1
+        m_AnimatorState: InteractSquating
+        m_TransitionDuration: 2
     - rid: 8031577948653092867
       type: {class: CanPickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:

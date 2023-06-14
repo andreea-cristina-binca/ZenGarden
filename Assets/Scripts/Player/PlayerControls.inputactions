@@ -33,15 +33,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Crouch",
-                    "type": "Button",
-                    "id": "ef3afe1b-9a3d-4464-b313-b58124e9f37d",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Interact",
                     "type": "Button",
                     "id": "32a1b840-c4ba-41ed-b90a-c10b4e000e82",
@@ -63,6 +54,15 @@
                     "name": "Action",
                     "type": "Button",
                     "id": "def02836-ce74-4a66-a1de-e2482a5d4222",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Tablet",
+                    "type": "Button",
+                    "id": "aa99171b-9d94-49f7-a0f0-e6cced638e5b",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -149,19 +149,8 @@
                 },
                 {
                     "name": "",
-                    "id": "24ea455f-6fc6-43b2-a890-c03fbf9e5eca",
-                    "path": "<Keyboard>/ctrl",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Crouch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "60b2fe57-b462-4cb4-b2d8-38a5f6671178",
-                    "path": "<Keyboard>/e",
+                    "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -188,6 +177,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "18eccc7b-fe6f-4ff3-8a8d-9e68e753ef2c",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tablet",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

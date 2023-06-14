@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 3014009175906165127}
   - component: {fileID: 7685409937792487360}
   - component: {fileID: 24965316542464260}
+  - component: {fileID: -7563279681635929952}
   m_Layer: 7
   m_Name: New daffodil_seed(Clone)
   m_TagString: Daffodil
@@ -37,7 +38,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &183526593525836788
 MeshFilter:
@@ -109,11 +110,10 @@ MonoBehaviour:
   actions:
   - rid: 8031577948653092867
   - rid: 1523893482780885014
-  - rid: 1523893482780885020
+  - rid: 5820654355098894435
   - rid: 1523893464419794954
   - rid: 8031577948653092868
   - rid: 1523893482780885015
-  - rid: 1523893482780885021
   m_Interruptable: 0
   references:
     version: 2
@@ -130,7 +130,7 @@ MonoBehaviour:
       type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.SetEnabled
-        m_Enabled: 0
+        m_Enabled: 1
         m_Target: 1
         m_ComponentName: Player
         m_Enable: 0
@@ -138,26 +138,18 @@ MonoBehaviour:
       type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
       data:
         m_Type: DevionGames.SetEnabled
-        m_Enabled: 0
+        m_Enabled: 1
         m_Target: 1
         m_ComponentName: Player
         m_Enable: 1
-    - rid: 1523893482780885020
-      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
+    - rid: 5820654355098894435
+      type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
       data:
-        m_Type: DevionGames.SetEnabled
-        m_Enabled: 0
-        m_Target: 2
-        m_ComponentName: MouseLook
-        m_Enable: 0
-    - rid: 1523893482780885021
-      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
-      data:
-        m_Type: DevionGames.SetEnabled
-        m_Enabled: 0
-        m_Target: 2
-        m_ComponentName: MouseLook
-        m_Enable: 1
+        m_Type: DevionGames.CrossFade
+        m_Enabled: 1
+        m_Target: 1
+        m_AnimatorState: InteractSquating
+        m_TransitionDuration: 2
     - rid: 8031577948653092867
       type: {class: CanPickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
@@ -261,3 +253,17 @@ MonoBehaviour:
     type: 3}
   yellowCoreSeed: {fileID: 3192136709002642208, guid: bc978fecded0711478fecf8f49da8696,
     type: 3}
+--- !u!114 &-7563279681635929952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466647449347511606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ff8949b55037043a6183d61fd8dcff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Title: 
+  m_Instruction: Interact
