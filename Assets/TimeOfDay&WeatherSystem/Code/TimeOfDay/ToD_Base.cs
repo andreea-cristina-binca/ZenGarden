@@ -250,10 +250,10 @@ public class ToD_Base : MonoBehaviour
 
         // Controls the speed of our "clock"
         _fCurrentTimeOfDay += (Time.deltaTime / _fSecondInAFullDay) * _fTimeMultiplier;
-
+        
         // Digital time
-        _fCurrentHour = 24 * _fCurrentTimeOfDay;
-        _fCurrentMinute = 60 * (_fCurrentHour - Mathf.Floor(_fCurrentHour));
+        _fCurrentHour = Clock.ClockHour;
+        _fCurrentMinute = Clock.ClockMinute;
 
         // resets our time of day to 0 + adds a day to our amount of days played
         if (_fCurrentTimeOfDay >= 1.0f)
