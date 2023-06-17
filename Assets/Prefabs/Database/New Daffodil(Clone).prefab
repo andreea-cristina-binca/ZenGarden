@@ -75,6 +75,7 @@ MonoBehaviour:
   - rid: 5820654266139541654
   - rid: 5820654355098894480
   - rid: 1523893529703874597
+  - rid: 5820654424338202748
   - rid: 5820654266139541661
   m_Interruptable: 0
   references:
@@ -132,6 +133,14 @@ MonoBehaviour:
         m_WidgetName: General Progressbar
         m_Title: harvesting...
         m_Duration: 2
+    - rid: 5820654424338202748
+      type: {class: Play, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.Play
+        m_Enabled: 1
+        m_Clip: {fileID: 8300000, guid: 134b331789294494ab362f8d2f7db511, type: 3}
+        m_AudioMixerGroup: {fileID: 0}
+        m_Volume: 0.5
 --- !u!114 &5299688465420837267
 MonoBehaviour:
   m_ObjectHideFlags: 0
