@@ -193,7 +193,9 @@ public class ToD_Base : MonoBehaviour
     public int GetSet_iStartHour
     {
         get { return _iStartHour; }
-        set { _iStartHour = value; }
+        set { _iStartHour = System.DateTime.UtcNow.ToLocalTime().ToString("tt").ToLower().Equals("p.m.") ? 
+                            int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("hh"))+12 : 
+                            int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("hh")); }
     }
 
     public int GetSet_iSunriseStart
@@ -250,8 +252,10 @@ public class ToD_Base : MonoBehaviour
 
         // Controls the speed of our "clock"
         _fCurrentTimeOfDay += (Time.deltaTime / _fSecondInAFullDay) * _fTimeMultiplier;
-        
+
         // Digital time
+        // _fCurrentHour = 24 * _fCurrentTimeOfDay;
+        // _fCurrentMinute = 60 * (_fCurrentHour - Mathf.Floor(_fCurrentHour));
         _fCurrentHour = Clock.ClockHour;
         _fCurrentMinute = Clock.ClockMinute;
 
