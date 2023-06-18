@@ -254,8 +254,8 @@ public class ToD_Base : MonoBehaviour
         _fCurrentTimeOfDay += (Time.deltaTime / _fSecondInAFullDay) * _fTimeMultiplier;
 
         // Digital time
-        // _fCurrentHour = 24 * _fCurrentTimeOfDay;
-        // _fCurrentMinute = 60 * (_fCurrentHour - Mathf.Floor(_fCurrentHour));
+        //_fCurrentHour = 24 * _fCurrentTimeOfDay;
+        //_fCurrentMinute = 60 * (_fCurrentHour - Mathf.Floor(_fCurrentHour));
         _fCurrentHour = Clock.ClockHour;
         _fCurrentMinute = Clock.ClockMinute;
 

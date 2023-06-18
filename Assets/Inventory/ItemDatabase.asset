@@ -165,8 +165,24 @@ MonoBehaviour:
   - {fileID: 914045514894526987}
   - {fileID: -1328188924954542639}
   - {fileID: 8723047200007963551}
-  m_Amounts: 0a0000000a0000000a0000000a000000
+  - {fileID: 8494957154257734954}
+  - {fileID: 8431182526910366549}
+  - {fileID: -3094648347103256403}
+  - {fileID: -4502291100217963912}
+  - {fileID: 7137649353903654467}
+  - {fileID: 4619771673954617027}
+  - {fileID: -4920201477338114218}
+  - {fileID: -944683790886301280}
+  m_Amounts: 0a0000000a0000000a0000000a0000000200000002000000020000000200000002000000010000000100000001000000
   m_Modifiers:
+  - modifiers: []
+  - modifiers: []
+  - modifiers: []
+  - modifiers: []
+  - modifiers: []
+  - modifiers: []
+  - modifiers: []
+  - modifiers: []
   - modifiers: []
   - modifiers: []
   - modifiers: []
@@ -408,11 +424,98 @@ MonoBehaviour:
     type: 3}
   m_Description: A stand for planting
   m_Category: {fileID: -8714117849886982192}
-  m_IsSellable: 0
-  m_BuyPrice: 0
+  m_IsSellable: 1
+  m_BuyPrice: 15
   m_CanBuyBack: 1
   m_BuyCurrency: {fileID: -9008354556261382020}
-  m_SellPrice: 0
+  m_SellPrice: 15
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+--- !u!114 &-4502291100217963912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Hanging Plant
+  m_EditorClassIdentifier: 
+  m_Id: 3d0b2f59-632b-4844-8ff3-3316a3623742
+  m_ItemName: Hanging Plant
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 50034a2bf2b0b6f429a99907f3f91a2c, type: 3}
+  m_Prefab: {fileID: 5328377373870820692, guid: dc617f94752d6344cb053643af101e0f,
+    type: 3}
+  m_Description: Beautiful purple flowers in a hanging pot
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 25
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 25
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+--- !u!114 &-3094648347103256403
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Crate Plant
+  m_EditorClassIdentifier: 
+  m_Id: 86ffe280-2812-4b89-9f20-78dbd44584b0
+  m_ItemName: Crate Plant
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 6028fa0043bd0f3448067a2e39a27ab1, type: 3}
+  m_Prefab: {fileID: 607688522385663986, guid: aae3c162ed6573e428d49641c9e50c95, type: 3}
+  m_Description: A big luscious plant in a crate
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 40
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 40
   m_SellCurrency: {fileID: -9008354556261382020}
   m_Stack: 1
   m_MaxStack: 1
@@ -527,11 +630,11 @@ MonoBehaviour:
   m_Prefab: {fileID: 423262027919390904, guid: ff4900f0b59e5754f8de22ed35e59cc3, type: 3}
   m_Description: A pile of freshly fertilized ground, good for planting
   m_Category: {fileID: -8714117849886982192}
-  m_IsSellable: 0
-  m_BuyPrice: 0
+  m_IsSellable: 1
+  m_BuyPrice: 5
   m_CanBuyBack: 1
   m_BuyCurrency: {fileID: -9008354556261382020}
-  m_SellPrice: 0
+  m_SellPrice: 5
   m_SellCurrency: {fileID: -9008354556261382020}
   m_Stack: 1
   m_MaxStack: 1
@@ -574,6 +677,11 @@ MonoBehaviour:
   - {fileID: 4619771673954617027}
   - {fileID: -4920201477338114218}
   - {fileID: -944683790886301280}
+  - {fileID: -3094648347103256403}
+  - {fileID: 8431182526910366549}
+  - {fileID: -4502291100217963912}
+  - {fileID: 8494957154257734954}
+  - {fileID: 7137649353903654467}
   currencies:
   - {fileID: -9008354556261382020}
   raritys: []
@@ -667,11 +775,11 @@ MonoBehaviour:
     type: 3}
   m_Description: A pot for planting
   m_Category: {fileID: -8714117849886982192}
-  m_IsSellable: 0
-  m_BuyPrice: 0
+  m_IsSellable: 1
+  m_BuyPrice: 10
   m_CanBuyBack: 1
   m_BuyCurrency: {fileID: -9008354556261382020}
-  m_SellPrice: 0
+  m_SellPrice: 10
   m_SellCurrency: {fileID: -9008354556261382020}
   m_Stack: 1
   m_MaxStack: 1
@@ -750,6 +858,50 @@ MonoBehaviour:
   sellPriceTooltipName: Sell Price Tooltip
   stackName: Stack
   notificationName: Notification
+--- !u!114 &7137649353903654467
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Agapanthus
+  m_EditorClassIdentifier: 
+  m_Id: d44606de-5bc9-4579-ad00-66264bfc67c3
+  m_ItemName: Agapanthus
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: c3150dd4b4079534a8057a9e4d569133, type: 3}
+  m_Prefab: {fileID: 8986415741913569438, guid: 123fa73f3d0d1f149ab4a1fb33dfb1ec,
+    type: 3}
+  m_Description: A dense bush of white flowers
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 50
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 50
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &7296480038318277723
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -779,6 +931,94 @@ MonoBehaviour:
   m_SellCurrency: {fileID: -9008354556261382020}
   m_Stack: 10
   m_MaxStack: 10
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+--- !u!114 &8431182526910366549
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Aloe Vera
+  m_EditorClassIdentifier: 
+  m_Id: f0675856-50b3-48b3-b946-e6b9a3b3276e
+  m_ItemName: Aloe Vera
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: c099a5f9aa14b6d4a9a2f02f2084ef03, type: 3}
+  m_Prefab: {fileID: 2298654097974234034, guid: db73cf6307cc93143af6edae8a90c6b2,
+    type: 3}
+  m_Description: An aloe vera plant with soothing properties
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 20
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 20
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+--- !u!114 &8494957154257734954
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Jasmine
+  m_EditorClassIdentifier: 
+  m_Id: 626b6cf9-0471-43f4-b04d-236afa0c84e4
+  m_ItemName: Jasmine
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 3a11090e8afef694daf21c336a5316ef, type: 3}
+  m_Prefab: {fileID: 8952798272272816786, guid: 4f86a18db91fac242a2ab7946fc75a0b,
+    type: 3}
+  m_Description: Potted Jasmine flowers that can freshen up any place
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 15
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 15
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 1
+  m_MaxStack: 1
   m_IsDroppable: 1
   m_DropSound: {fileID: 0}
   m_OverridePrefab: {fileID: 0}
