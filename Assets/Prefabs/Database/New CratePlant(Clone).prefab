@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6236076835992476837}
   - component: {fileID: 9102640461435616116}
   - component: {fileID: 1444128651486797771}
+  - component: {fileID: 2915971829487555831}
   m_Layer: 0
   m_Name: New CratePlant(Clone)
   m_TagString: Untagged
@@ -34,7 +35,7 @@ Transform:
   m_Children:
   - {fileID: 9200443854884989193}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8633988982906773635
 MonoBehaviour:
@@ -50,14 +51,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delegates: []
   useDistance: 1.2
-  triggerType: 9
-  key: 102
+  triggerType: 1
+  key: 101
   actionTemplate: {fileID: 0}
-  actions: []
+  actions:
+  - rid: 8031577948653092867
+  - rid: 1523893482780885014
+  - rid: 5820654355098894435
+  - rid: 1523893464419794954
+  - rid: 8031577948653092868
+  - rid: 1523893482780885015
   m_Interruptable: 0
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1523893464419794954
+      type: {class: ShowProgressbar, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
+      data:
+        m_Type: DevionGames.InventorySystem.ShowProgressbar
+        m_Enabled: 1
+        m_WidgetName: General Progressbar
+        m_Title: picking up
+        m_Duration: 1
+    - rid: 1523893482780885014
+      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.SetEnabled
+        m_Enabled: 1
+        m_Target: 1
+        m_ComponentName: Player
+        m_Enable: 0
+    - rid: 1523893482780885015
+      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.SetEnabled
+        m_Enabled: 1
+        m_Target: 1
+        m_ComponentName: Player
+        m_Enable: 1
+    - rid: 5820654355098894435
+      type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
+      data:
+        m_Type: DevionGames.CrossFade
+        m_Enabled: 1
+        m_Target: 1
+        m_AnimatorState: InteractSquating
+        m_TransitionDuration: 2
+    - rid: 8031577948653092867
+      type: {class: CanPickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
+      data:
+        m_Type: DevionGames.InventorySystem.CanPickup
+        m_Enabled: 1
+        m_WindowName: Inventory
+    - rid: 8031577948653092868
+      type: {class: Pickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
+      data:
+        m_Type: DevionGames.InventorySystem.Pickup
+        m_Enabled: 1
+        m_WindowName: Inventory
+        m_DestroyWhenEmpty: 1
+        m_Amount: 1
 --- !u!114 &6236076835992476837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,11 +141,11 @@ MeshCollider:
   m_GameObject: {fileID: 607688522385663986}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 1363644582239646907, guid: 7c55cfde8fc72364e9ea408a14f0dbcb, type: 3}
 --- !u!54 &1444128651486797771
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -107,8 +160,21 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!65 &2915971829487555831
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607688522385663986}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &1691774076927759887
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,8 +272,8 @@ MeshCollider:
   m_GameObject: {fileID: 1691774076927759887}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1363644582239646907, guid: 7c55cfde8fc72364e9ea408a14f0dbcb, type: 3}
