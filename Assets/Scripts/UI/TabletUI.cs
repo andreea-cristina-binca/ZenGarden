@@ -6,16 +6,20 @@ using DevionGames.UIWidgets;
 public class TabletUI : MonoBehaviour
 {
     [SerializeField] private GameObject tabletUI;
-    //[SerializeField] private GameObject inventoryUI;
-    //[SerializeField] private GameObject vendorUI;
+    [SerializeField] private GameObject vendorTab;
+    [SerializeField] private GameObject challengesTab;
+    [SerializeField] private GameObject musicTab;
 
     private bool isActive;
 
     private void Start()
     {
         tabletUI.GetComponent<UIWidget>().Close();
-        //inventoryUI.GetComponent<ItemContainer>().Close();
-        //vendorUI.GetComponent<ItemContainer>().Close();
+        
+        vendorTab.SetActive(false);
+        challengesTab.SetActive(false);
+        musicTab.SetActive(false);
+        
         isActive = false;
     }
 
@@ -26,21 +30,26 @@ public class TabletUI : MonoBehaviour
             if (isActive)
             {
                 tabletUI.GetComponent<UIWidget>().Close();
-                //inventoryUI.GetComponent<ItemContainer>().Close();
-                //vendorUI.GetComponent<ItemContainer>().Close();
                 Cursor.visible = false;
+
+                vendorTab.SetActive(false);
+                challengesTab.SetActive(false);
+                musicTab.SetActive(false);
 
                 isActive = false;
             }
             else
             {
                 tabletUI.GetComponent<UIWidget>().Show();
-                //inventoryUI.GetComponent<ItemContainer>().Show();
-                //vendorUI.GetComponent<ItemContainer>().Show();
                 Cursor.visible = true;
 
                 isActive = true;
             }
         }
+    }
+
+    public void DeactivateButton()
+    {
+        isActive = false;
     }
 }

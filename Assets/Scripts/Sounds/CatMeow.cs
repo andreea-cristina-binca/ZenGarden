@@ -13,7 +13,7 @@ public class CatMeow : MonoBehaviour
     void Start()
     {
         AudioSource.PlayClipAtPoint(meowOne, transform.position, 1f);
-        frequency = Random.Range(100, 500);
+        frequency = Random.Range(60, 120);
         timePassed = 0;
     }
 
