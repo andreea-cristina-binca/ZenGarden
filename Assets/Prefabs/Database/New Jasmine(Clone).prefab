@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 3612430049105933531}
   - component: {fileID: 2812284470206852325}
   - component: {fileID: 7779315098886593876}
+  - component: {fileID: -4157724772911565507}
   m_Layer: 0
   m_Name: New Jasmine(Clone)
   m_TagString: Untagged
@@ -249,3 +250,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!114 &-4157724772911565507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8952798272272816786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ff8949b55037043a6183d61fd8dcff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Title: 
+  m_Instruction: Interact

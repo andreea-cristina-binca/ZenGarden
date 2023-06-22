@@ -17,25 +17,25 @@ public class CloudColor : MonoBehaviour
 
     private void Update()
     {
-        if (timeOfDay != 0 && (Clock.ClockHour >= 7 && Clock.ClockHour <= 10))
+        if (timeOfDay != 0 && (Clock.ClockHour >= 5 && Clock.ClockHour < 7))
         {
             day.SetActive(false);
             night.SetActive(false);
             dawnDusk.SetActive(true);
         }
-        else if (timeOfDay != 1 && (Clock.ClockHour > 10 && Clock.ClockHour < 19))
+        else if (timeOfDay != 1 && (Clock.ClockHour >= 7 && Clock.ClockHour < 17))
         {
             day.SetActive(true);
             night.SetActive(false);
             dawnDusk.SetActive(false);
         }
-        else if (timeOfDay != 2 && (Clock.ClockHour >= 19 && Clock.ClockHour <= 22))
+        else if (timeOfDay != 2 && (Clock.ClockHour >= 17 && Clock.ClockHour < 19))
         {
             day.SetActive(false);
             night.SetActive(false);
             dawnDusk.SetActive(true);
         }
-        else if (timeOfDay != 3 && (Clock.ClockHour > 22 || Clock.ClockHour < 10))
+        else if (timeOfDay != 3 && (Clock.ClockHour >= 19 || Clock.ClockHour < 5))
         {
             day.SetActive(false);
             night.SetActive(true);

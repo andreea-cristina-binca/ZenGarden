@@ -18,13 +18,13 @@ public class ShowLight : MonoBehaviour
 
     void Update()
     {
-        if (!isNight && (Clock.ClockHour >= 19 || Clock.ClockHour < 10))
+        if (!isNight && (Clock.ClockHour >= 19 || Clock.ClockHour < 7))
         {
             ChangeLightMaterial(lightOn);
             isNight = true;
         }
         
-        if (isNight && (Clock.ClockHour < 19 && Clock.ClockHour >= 10))
+        if (isNight && (Clock.ClockHour < 19 && Clock.ClockHour >= 7))
         {
             ChangeLightMaterial(lightOff);
             isNight = false;

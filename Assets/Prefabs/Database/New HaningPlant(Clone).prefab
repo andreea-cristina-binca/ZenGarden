@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5984972174169018482}
   - component: {fileID: 4220336362786472765}
   - component: {fileID: 5484727418871190274}
+  - component: {fileID: -911139157071858070}
   m_Layer: 0
   m_Name: New HaningPlant(Clone)
   m_TagString: Untagged
@@ -176,6 +177,20 @@ CapsuleCollider:
   m_Height: 0.82
   m_Direction: 1
   m_Center: {x: 0, y: 0.4, z: 0}
+--- !u!114 &-911139157071858070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5328377373870820692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ff8949b55037043a6183d61fd8dcff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Title: 
+  m_Instruction: Interact
 --- !u!1 &7783428980739257369
 GameObject:
   m_ObjectHideFlags: 0
