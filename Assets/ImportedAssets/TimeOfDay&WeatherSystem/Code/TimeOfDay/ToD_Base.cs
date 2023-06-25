@@ -193,9 +193,9 @@ public class ToD_Base : MonoBehaviour
     public int GetSet_iStartHour
     {
         get { return _iStartHour; }
-        set { _iStartHour = System.DateTime.UtcNow.ToLocalTime().ToString("tt").ToLower().Equals("p.m.") ? 
-                            int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("hh"))+12 : 
-                            int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("hh")); }
+        set {
+            int hour = int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("hh"));
+            _iStartHour = (System.DateTime.UtcNow.ToLocalTime().ToString("tt").ToLower().Equals("p.m.")  && hour != 12) ? hour + 12 : hour; }
     }
 
     public int GetSet_iSunriseStart
@@ -231,6 +231,7 @@ public class ToD_Base : MonoBehaviour
     {
         _fStartingHour = ONEHOURLENGTH * (float)_iStartHour;
         _fCurrentTimeOfDay = _fStartingHour;
+        _fCurrentTimeOfDay += (60 * int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("mm")) / _fSecondInAFullDay) * _fTimeMultiplier;
 
         _fStartingSunrise = ONEHOURLENGTH * (float)_iSunriseStart;
         _fStartingDay = ONEHOURLENGTH * (float)_iDayStart;

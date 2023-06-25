@@ -57,8 +57,10 @@ public class Clock : MonoBehaviour
         hours = int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("hh"));
 
         string tod = System.DateTime.UtcNow.ToLocalTime().ToString("tt");
-        if (tod.ToLower().Equals("p.m."))
+        if (tod.ToLower().Equals("p.m.") && hours != 12)
             hours += 12;
+        if (tod.ToLower().Equals("a.m.") && hours == 12)
+            hours = 0;
 
         time.text = $"{hours:00}:{minutes:00}";
     }
