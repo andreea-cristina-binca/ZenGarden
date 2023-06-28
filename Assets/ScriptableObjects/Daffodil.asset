@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: Daffodil
   prefab: {fileID: 720472449050307508, guid: 9e138ddf9f83de3429a89a7b82fa672e, type: 3}
-  seconds: 3
-  minutes: 0
+  seconds: 0
+  minutes: 1
   hours: 0

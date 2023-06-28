@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: Yellow Core
   prefab: {fileID: 1656872353559199992, guid: 566e24b196817b640910b5fe6ee3a6f6, type: 3}
-  seconds: 3
-  minutes: 0
+  seconds: 30
+  minutes: 1
   hours: 0

@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1111801969
 Transform:
@@ -47,7 +47,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1737800335204214814
 Transform:
@@ -130,7 +130,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8855889851771799988
 Transform:
@@ -213,7 +213,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2883155891068211966
 Transform:
@@ -296,7 +296,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4494864745346991459
 Transform:
@@ -379,7 +379,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5912697296432600672
 Transform:
@@ -462,7 +462,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8220144269903219001
 Transform:
@@ -545,7 +545,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1537407595305095196
 Transform:
@@ -626,7 +626,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7316898336201039519
 Transform:
@@ -661,7 +661,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3558779840796923013
 Transform:
@@ -744,7 +744,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1364011446887355227
 Transform:
@@ -833,7 +833,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4506403448164607933
 Transform:
@@ -873,11 +873,10 @@ MonoBehaviour:
   actions:
   - rid: 8031577948653092867
   - rid: 1523893482780885014
-  - rid: 1523893482780885020
+  - rid: 5820654355098894435
   - rid: 1523893464419794954
   - rid: 8031577948653092868
   - rid: 1523893482780885015
-  - rid: 1523893482780885021
   m_Interruptable: 0
   references:
     version: 2
@@ -889,7 +888,7 @@ MonoBehaviour:
         m_Enabled: 1
         m_WidgetName: General Progressbar
         m_Title: picking up
-        m_Duration: 1
+        m_Duration: 2
     - rid: 1523893482780885014
       type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
       data:
@@ -906,22 +905,14 @@ MonoBehaviour:
         m_Target: 1
         m_ComponentName: Player
         m_Enable: 1
-    - rid: 1523893482780885020
-      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
+    - rid: 5820654355098894435
+      type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
       data:
-        m_Type: DevionGames.SetEnabled
-        m_Enabled: 0
-        m_Target: 2
-        m_ComponentName: MouseLook
-        m_Enable: 0
-    - rid: 1523893482780885021
-      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
-      data:
-        m_Type: DevionGames.SetEnabled
+        m_Type: DevionGames.CrossFade
         m_Enabled: 1
-        m_Target: 2
-        m_ComponentName: MouseLook
-        m_Enable: 1
+        m_Target: 1
+        m_AnimatorState: InteractSquating
+        m_TransitionDuration: 2
     - rid: 8031577948653092867
       type: {class: CanPickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
@@ -1091,7 +1082,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &9129990688410563441
 Transform:
@@ -1174,7 +1165,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3684807357190208278
 Transform:
@@ -1258,7 +1249,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3119256912026760650
 Transform:
@@ -1351,7 +1342,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5760571423885063240
 Transform:
@@ -1430,6 +1421,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Timer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3515920492911800470, guid: 7f872f0fcfcdf3940819c24ebed92791,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3969262339248190304, guid: 7f872f0fcfcdf3940819c24ebed92791,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6515877541891681768, guid: 7f872f0fcfcdf3940819c24ebed92791,
         type: 3}

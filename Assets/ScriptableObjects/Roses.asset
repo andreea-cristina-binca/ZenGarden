@@ -15,5 +15,5 @@ MonoBehaviour:
   objectName: Roses
   prefab: {fileID: 1952767612885439052, guid: 0ed2ce0a8ab7c4444bcede25f55c9af5, type: 3}
   seconds: 3
-  minutes: 0
+  minutes: 3
   hours: 0

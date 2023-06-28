@@ -6,6 +6,8 @@ using DevionGames;
 public class Planting : MonoBehaviour
 {
     public Animator animator;
+    public AudioClip planting;
+    public AudioClip pickingUp;
 
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Transform playerHoldingPoint;
@@ -43,6 +45,8 @@ public class Planting : MonoBehaviour
                             plantedStanding = true;
                         else
                             plantedSquating = true;
+
+                        AudioSource.PlayClipAtPoint(planting, transform.position, 0.5f);
                     }
                 }
             }
@@ -56,6 +60,8 @@ public class Planting : MonoBehaviour
                     if (isHolding != null)
                     {
                         pickedUpSeeds = true;
+
+                        AudioSource.PlayClipAtPoint(pickingUp, transform.position, 0.5f);
                     }
                 }
             }

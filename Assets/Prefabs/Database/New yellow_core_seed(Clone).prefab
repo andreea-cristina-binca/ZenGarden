@@ -17,12 +17,13 @@ GameObject:
   - component: {fileID: 4605252059349820027}
   - component: {fileID: 5302211927524262082}
   - component: {fileID: 8678112703844972352}
+  - component: {fileID: 4199522830251287160}
   m_Layer: 7
   m_Name: New yellow_core_seed(Clone)
   m_TagString: YellowCore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8266465757383355197
 Transform:
@@ -37,7 +38,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1581481720307485197
 MeshFilter:
@@ -109,11 +110,10 @@ MonoBehaviour:
   actions:
   - rid: 8031577948653092867
   - rid: 1523893482780885014
-  - rid: 1523893482780885020
+  - rid: 5820654355098894435
   - rid: 1523893464419794954
   - rid: 8031577948653092868
   - rid: 1523893482780885015
-  - rid: 1523893482780885021
   m_Interruptable: 0
   references:
     version: 2
@@ -142,22 +142,14 @@ MonoBehaviour:
         m_Target: 1
         m_ComponentName: Player
         m_Enable: 1
-    - rid: 1523893482780885020
-      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
+    - rid: 5820654355098894435
+      type: {class: CrossFade, ns: DevionGames, asm: DevionGames.Triggers}
       data:
-        m_Type: DevionGames.SetEnabled
-        m_Enabled: 0
-        m_Target: 2
-        m_ComponentName: MouseLook
-        m_Enable: 0
-    - rid: 1523893482780885021
-      type: {class: SetEnabled, ns: DevionGames, asm: DevionGames.Triggers}
-      data:
-        m_Type: DevionGames.SetEnabled
-        m_Enabled: 0
-        m_Target: 2
-        m_ComponentName: MouseLook
-        m_Enable: 1
+        m_Type: DevionGames.CrossFade
+        m_Enabled: 1
+        m_Target: 1
+        m_AnimatorState: InteractSquating
+        m_TransitionDuration: 2
     - rid: 8031577948653092867
       type: {class: CanPickup, ns: DevionGames.InventorySystem, asm: DevionGames.InventorySystem}
       data:
@@ -189,7 +181,7 @@ MonoBehaviour:
   - {fileID: 8723047200007963551, guid: c003d55480015c24687277a414bf728a, type: 2}
   - {fileID: 8723047200007963551, guid: c003d55480015c24687277a414bf728a, type: 2}
   - {fileID: 8723047200007963551, guid: c003d55480015c24687277a414bf728a, type: 2}
-  m_Amounts: 010000000100000001000000
+  m_Amounts: 0a0000000a0000000a000000
   m_Modifiers:
   - modifiers: []
   - modifiers: []
@@ -261,3 +253,17 @@ MonoBehaviour:
     type: 3}
   yellowCoreSeed: {fileID: 3192136709002642208, guid: bc978fecded0711478fecf8f49da8696,
     type: 3}
+--- !u!114 &4199522830251287160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3131914137566282753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ff8949b55037043a6183d61fd8dcff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Title: 
+  m_Instruction: Interact

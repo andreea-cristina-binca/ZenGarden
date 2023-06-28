@@ -14,15 +14,20 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask groundMask;
 
     public Animator animator;
+    public AudioClip footsteps;
     
     private Vector3 oldPosition;
     private Vector3 velocity;
     private bool isGrounded;
     private bool isJumping;
+    private float stepTimer;
+    private float stepTimerMax;
 
     private void Start()
     {
         oldPosition = transform.position;
+
+        stepTimerMax = 0.5f;
     }
 
     void Update()
@@ -73,6 +78,16 @@ public class Player : MonoBehaviour
                 animator.SetBool("isJumping", true);
             else
                 animator.SetBool("isJumping", false);
+
+            if (isGrounded)
+            {
+                stepTimer -= Time.deltaTime;
+                if (stepTimer < 0f)
+                {
+                    stepTimer = stepTimerMax;
+                    AudioSource.PlayClipAtPoint(footsteps, transform.position, 0.5f);
+                }
+            }
         }
     }
 }

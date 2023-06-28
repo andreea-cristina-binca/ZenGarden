@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectName: Tulips
   prefab: {fileID: 5944904893197892761, guid: fe3375584021e0f44b318808d852f6e4, type: 3}
-  seconds: 3
-  minutes: 0
+  seconds: 0
+  minutes: 2
   hours: 0
