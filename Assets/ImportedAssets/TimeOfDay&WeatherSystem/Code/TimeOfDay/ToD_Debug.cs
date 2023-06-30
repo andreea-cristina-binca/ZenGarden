@@ -65,39 +65,39 @@ public class ToD_Debug : MonoBehaviour
         {
             // Tells that debug mode is on
             GUI.color = Color.yellow;
-            GUI.Label(new Rect(Screen.width / 2 - 120, 20, 240, 30), "Debugging: TIME OF DAY");
-            GUI.Label(new Rect(Screen.width / 2 - 225, 40, 450, 30), "Press H for more Debug information and controls");
+            //GUI.Label(new Rect(Screen.width / 2 - 120, 20, 240, 30), "Debugging: TIME OF DAY");
+            //GUI.Label(new Rect(Screen.width / 2 - 225, 40, 450, 30), "Press H for more Debug information and controls");
 
             // What are we debugging
             GUI.color = Color.red;
 
             // Current time *F0 means we show 0 of the floats decimals
-            GUI.Label(new Rect(20, 60, 200, 30), "Current time:");
-            GUI.Label(new Rect(220, 60, 25, 30), _clToDBase.Get_fCurrentHour.ToString("F1"));
-            GUI.Label(new Rect(250, 60, 200, 30), ":");
-            GUI.Label(new Rect(260, 60, 200, 30), _clToDBase.Get_fCurrentMinute.ToString("F0"));
+            //GUI.Label(new Rect(20, 60, 200, 30), "Current time:");
+            //GUI.Label(new Rect(220, 60, 25, 30), _clToDBase.Get_fCurrentHour.ToString("F1"));
+            //GUI.Label(new Rect(250, 60, 200, 30), ":");
+            //GUI.Label(new Rect(260, 60, 200, 30), _clToDBase.Get_fCurrentMinute.ToString("F0"));
 
             // Current timeset
-            GUI.Label(new Rect(20, 90, 200, 30), "Timeset:");
-            GUI.Label(new Rect(220, 90, 200, 30), _clToDBase.enCurrTimeset.ToString());
+            //GUI.Label(new Rect(20, 90, 200, 30), "Timeset:");
+            //GUI.Label(new Rect(220, 90, 200, 30), _clToDBase.enCurrTimeset.ToString());
 
             // Current time of day speed
-            GUI.Label(new Rect(20, 150, 200, 30), "Current ToD Speed:");
-            GUI.Label(new Rect(220, 150, 200, 30), _clToDBase.GetSet_fTimeMultiplier.ToString());
+            //GUI.Label(new Rect(20, 150, 200, 30), "Current ToD Speed:");
+            //GUI.Label(new Rect(220, 150, 200, 30), _clToDBase.GetSet_fTimeMultiplier.ToString());
 
             // How many days have we played
-            GUI.Label(new Rect(20, 180, 200, 30), "Days played:");
-            GUI.Label(new Rect(220, 180, 200, 30), _clToDBase.Get_iAmountOfDaysPlayed.ToString());
+            //GUI.Label(new Rect(20, 180, 200, 30), "Days played:");
+            //GUI.Label(new Rect(220, 180, 200, 30), _clToDBase.Get_iAmountOfDaysPlayed.ToString());
 
             if (_bMoreDebugInfo == true)
             {
                 GUI.color = Color.blue;
                
                 // More controls
-                GUI.Label(new Rect(20, 240, 600, 30), "Press 0 to add 0.5f to the Time of Day speed");
-                GUI.Label(new Rect(20, 270, 600, 30), "Press 9 to substract 0.5f off the Time of Day speed");
-                GUI.Label(new Rect(20, 300, 600, 30), "Press 8 to reset Time of Day speed to 1.0f");
-                GUI.Label(new Rect(20, 330, 600, 30), "Max speed is 10.0f, and Minimum speed is 0.0f");
+                //GUI.Label(new Rect(20, 240, 600, 30), "Press 0 to add 0.5f to the Time of Day speed");
+                //GUI.Label(new Rect(20, 270, 600, 30), "Press 9 to substract 0.5f off the Time of Day speed");
+                //GUI.Label(new Rect(20, 300, 600, 30), "Press 8 to reset Time of Day speed to 1.0f");
+                //GUI.Label(new Rect(20, 330, 600, 30), "Max speed is 10.0f, and Minimum speed is 0.0f");
             }
         }
     }

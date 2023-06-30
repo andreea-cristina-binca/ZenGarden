@@ -28450,7 +28450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11449922, guid: 60db50946a122ca4084afb1bdbaf9317, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11497762, guid: 60db50946a122ca4084afb1bdbaf9317, type: 3}
       propertyPath: lSun
@@ -28466,7 +28466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11497762, guid: 60db50946a122ca4084afb1bdbaf9317, type: 3}
       propertyPath: _iStartHour
-      value: 6
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 11497762, guid: 60db50946a122ca4084afb1bdbaf9317, type: 3}
       propertyPath: _bUseWeather
