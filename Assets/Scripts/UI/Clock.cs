@@ -20,6 +20,8 @@ public class Clock : MonoBehaviour
     private int oldMinutes;
     private int oldHours;
 
+    private int currentTime;
+
     private void Start()
     {
         UpdateTime();
@@ -30,11 +32,14 @@ public class Clock : MonoBehaviour
 
         ClockMinute = minutes;
         ClockHour = hours;
+
+        currentTime = 0;
     }
 
     private void Update()
     {
-        int checkMinutes = int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("mm"));
+        //int checkMinutes = int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("mm"));
+        int checkMinutes = int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("ss"));
 
         if (checkMinutes != oldMinutes)
         {
@@ -53,14 +58,17 @@ public class Clock : MonoBehaviour
 
     private void UpdateTime()
     {
-        minutes = int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("mm"));
-        hours = int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("hh"));
+        //minutes = int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("mm"));
+        minutes = int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("ss"));
+        //hours = int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("hh"));
+        hours = int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("mm"));
 
-        string tod = System.DateTime.UtcNow.ToLocalTime().ToString("tt");
+        /*string tod = System.DateTime.UtcNow.ToLocalTime().ToString("tt");
         if (tod.ToLower().Equals("p.m.") && hours != 12)
             hours += 12;
         if (tod.ToLower().Equals("a.m.") && hours == 12)
-            hours = 0;
+            hours = 0;*/
+        hours = hours % 24;
 
         time.text = $"{hours:00}:{minutes:00}";
     }

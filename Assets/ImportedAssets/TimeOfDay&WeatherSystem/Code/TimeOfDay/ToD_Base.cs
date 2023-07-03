@@ -194,8 +194,8 @@ public class ToD_Base : MonoBehaviour
     {
         get { return _iStartHour; }
         set {
-            int hour = int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("hh"));
-            _iStartHour = (System.DateTime.UtcNow.ToLocalTime().ToString("tt").ToLower().Equals("p.m.")  && hour != 12) ? hour + 12 : hour; }
+            int hour = int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("mm"));
+            _iStartHour = hour % 24; }
     }
 
     public int GetSet_iSunriseStart
@@ -231,7 +231,7 @@ public class ToD_Base : MonoBehaviour
     {
         _fStartingHour = ONEHOURLENGTH * (float)_iStartHour;
         _fCurrentTimeOfDay = _fStartingHour;
-        _fCurrentTimeOfDay += (60 * int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("mm")) / _fSecondInAFullDay) * _fTimeMultiplier;
+        //_fCurrentTimeOfDay += (60 * int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("ss")) / _fSecondInAFullDay) * _fTimeMultiplier;
 
         _fStartingSunrise = ONEHOURLENGTH * (float)_iSunriseStart;
         _fStartingDay = ONEHOURLENGTH * (float)_iDayStart;
@@ -255,10 +255,10 @@ public class ToD_Base : MonoBehaviour
         _fCurrentTimeOfDay += (Time.deltaTime / _fSecondInAFullDay) * _fTimeMultiplier;
 
         // Digital time
-        _fCurrentHour = 24 * _fCurrentTimeOfDay;
-        _fCurrentMinute = 60 * (_fCurrentHour - Mathf.Floor(_fCurrentHour));
-        //_fCurrentHour = Clock.ClockHour;
-        //_fCurrentMinute = Clock.ClockMinute;
+        //_fCurrentHour = 24 * _fCurrentTimeOfDay;
+        //_fCurrentMinute = 60 * (_fCurrentHour - Mathf.Floor(_fCurrentHour));
+        _fCurrentHour = Clock.ClockHour;
+        _fCurrentMinute = Clock.ClockMinute;
 
         // resets our time of day to 0 + adds a day to our amount of days played
         if (_fCurrentTimeOfDay >= 1.0f)

@@ -28466,7 +28466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11497762, guid: 60db50946a122ca4084afb1bdbaf9317, type: 3}
       propertyPath: _iStartHour
-      value: 18
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 11497762, guid: 60db50946a122ca4084afb1bdbaf9317, type: 3}
       propertyPath: _bUseWeather
@@ -28478,7 +28478,7 @@ PrefabInstance:
       objectReference: {fileID: 542485963}
     - target: {fileID: 11497762, guid: 60db50946a122ca4084afb1bdbaf9317, type: 3}
       propertyPath: _fSecondInAFullDay
-      value: 86400
+      value: 1440
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
