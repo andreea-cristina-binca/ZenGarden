@@ -49,7 +49,6 @@ public class WeatherManager : MonoBehaviour
                 break;
         }
 
-        Debug.Log(Clock.DateMonth);
         ChangeWeather(currentWeather); // Start with picked weather
     }
 
@@ -69,7 +68,9 @@ public class WeatherManager : MonoBehaviour
             case WeatherType.Sunny:
                 rainyClouds.SetActive(false);
                 sunnyClouds.SetActive(true);
-                //directionalLight.intensity = 1.0f;
+
+                directionalLight.intensity = 1.5f;
+
                 rainEffect.Stop();
                 snowEffect.Stop();
                 break;
@@ -77,7 +78,9 @@ public class WeatherManager : MonoBehaviour
             case WeatherType.Rainy:
                 sunnyClouds.SetActive(false);
                 rainyClouds.SetActive(true);
-                //directionalLight.intensity = 0.6f;
+
+                directionalLight.intensity = 0.0f;
+
                 rainEffect.Play();
                 snowEffect.Stop();
                 break;
@@ -85,7 +88,9 @@ public class WeatherManager : MonoBehaviour
             case WeatherType.Snowy:
                 sunnyClouds.SetActive(false);
                 rainyClouds.SetActive(true);
-                //directionalLight.intensity = 0.8f;
+
+                directionalLight.intensity = 0.0f;
+
                 rainEffect.Stop();
                 snowEffect.Play();
                 break;
@@ -93,7 +98,9 @@ public class WeatherManager : MonoBehaviour
             case WeatherType.Cloudy:
                 sunnyClouds.SetActive(false);
                 rainyClouds.SetActive(true);
-                //directionalLight.intensity = 0.5f;
+
+                directionalLight.intensity = 0.5f;
+
                 rainEffect.Stop();
                 snowEffect.Stop(); 
                 break;
