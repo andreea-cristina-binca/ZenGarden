@@ -8,6 +8,10 @@ public class Clock : MonoBehaviour
     public static int ClockHour;
     public static int ClockMinute;
 
+    public static int DateDay;
+    public static int DateMonth;
+    public static int DateYear;
+
     [SerializeField] private TextMeshProUGUI time;
     [SerializeField] private TextMeshProUGUI date;
 
@@ -20,6 +24,8 @@ public class Clock : MonoBehaviour
     private int oldMinutes;
     private int oldHours;
 
+    private int oldDay;
+
     private void Start()
     {
         UpdateTime();
@@ -30,6 +36,10 @@ public class Clock : MonoBehaviour
 
         ClockMinute = minutes;
         ClockHour = hours;
+
+        DateDay = day;
+        DateMonth = month;
+        DateYear = year;
     }
 
     private void Update()
@@ -47,6 +57,14 @@ public class Clock : MonoBehaviour
                 UpdateDate();
                 oldHours = hours;
                 ClockHour = hours;
+
+                if (oldDay != day)
+                {
+                    oldDay = day;
+                    DateDay = day;
+                    DateMonth = month;
+                    DateYear = year;
+                }
             }
         }
     }
