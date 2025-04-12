@@ -30,7 +30,6 @@ public class MapManager : MonoBehaviour
     void LoadMapBasedOnTime()
     {
         int month = int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("MM"));
-        //int month = 2;
 
         // Deactivate all maps initially
         springMap.SetActive(false);
