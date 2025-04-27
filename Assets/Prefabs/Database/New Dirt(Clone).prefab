@@ -4539,11 +4539,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 6630656093555544147}
   timerObject: {fileID: 8264131478305115872}
-  plantStartObject: {fileID: 11400000, guid: 4296357c8873e57489187026166834dc, type: 2}
+  plantSeedObject: {fileID: 11400000, guid: 357b6e583fa10124586c17b1537d126c, type: 2}
+  plantLeafObject: {fileID: 11400000, guid: 4296357c8873e57489187026166834dc, type: 2}
+  plantStemObject: {fileID: 11400000, guid: 59413c011b6c6f64eaa0ea55c28cb752, type: 2}
   tulipPlant: {fileID: 11400000, guid: 8b6162b5cf8c6244399b0c8af8166776, type: 2}
   rosePlant: {fileID: 11400000, guid: 4e24f1c5e2ff9ea41a46f98d27733fd3, type: 2}
   daffodilPlant: {fileID: 11400000, guid: 6ead8b1f75a46164a97e2a66710353e3, type: 2}
   yellowCorePlant: {fileID: 11400000, guid: 4d865fdbe7a67a5478c98b9507210f0e, type: 2}
+  lillyPlant: {fileID: 11400000, guid: 40b2cca70299cde4c86c5743f423101f, type: 2}
 --- !u!114 &1273147819008402678
 MonoBehaviour:
   m_ObjectHideFlags: 0

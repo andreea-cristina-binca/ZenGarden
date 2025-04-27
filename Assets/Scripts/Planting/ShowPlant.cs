@@ -7,17 +7,22 @@ public class ShowPlant : MonoBehaviour
 {
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private GameObject timerObject;
-    [SerializeField] private PlantSO plantStartObject;
+    [SerializeField] private PlantSO plantSeedObject;
+    [SerializeField] private PlantSO plantLeafObject;
+    [SerializeField] private PlantSO plantStemObject;
     [SerializeField] private PlantSO tulipPlant;
     [SerializeField] private PlantSO rosePlant;
     [SerializeField] private PlantSO daffodilPlant;
     [SerializeField] private PlantSO yellowCorePlant;
+    [SerializeField] private PlantSO lillyPlant;
 
     private PlantSO plantObject;
     private Transform plantTransform;
     private TimerManager timer;
     private bool planted;
     private bool harvestable;
+    private bool hasSpawnedAtOneThird;
+    private bool hasSpawnedAtTwoThirds;
 
     private void Start()
     {
@@ -26,21 +31,48 @@ public class ShowPlant : MonoBehaviour
         timerObject.SetActive(false);
         planted = false;
         harvestable = false;
+        hasSpawnedAtOneThird = false;
+        hasSpawnedAtTwoThirds = false;
     }
 
     private void Update()
     {
         if (planted)
         {
-            if (timer.GetHoursLeft() == 0 && timer.GetMinutesLeft() == 0 && timer.GetSecondsLeft() == 0)
+            float totalSeconds = (plantObject.hours * 3600) + (plantObject.minutes * 60) + plantObject.seconds;
+            float secondsLeft = (timer.GetHoursLeft() * 3600) + (timer.GetMinutesLeft() * 60) + timer.GetSecondsLeft();
+
+            // Check 1/3
+            if (!hasSpawnedAtOneThird && secondsLeft <= (2f / 3f) * totalSeconds)
             {
                 Destroy(plantTransform.gameObject);
+                plantTransform = Instantiate(plantLeafObject.prefab, spawnPoint);
+                plantTransform.localPosition = Vector3.zero;
 
+                hasSpawnedAtOneThird = true;
+            }
+
+            // Check 2/3
+            if (!hasSpawnedAtTwoThirds && secondsLeft <= (1f / 3f) * totalSeconds)
+            {
+                Destroy(plantTransform.gameObject);
+                plantTransform = Instantiate(plantStemObject.prefab, spawnPoint);
+                plantTransform.localPosition = Vector3.zero;
+
+                hasSpawnedAtTwoThirds = true;
+            }
+
+            // Check if timer is done
+            if (secondsLeft <= 0)
+            {
+                Destroy(plantTransform.gameObject);
                 plantTransform = Instantiate(plantObject.prefab, spawnPoint);
                 plantTransform.localPosition = Vector3.zero;
 
                 planted = false;
                 harvestable = true;
+                hasSpawnedAtOneThird = false;
+                hasSpawnedAtTwoThirds = false;
             }
         }
 
@@ -67,6 +99,9 @@ public class ShowPlant : MonoBehaviour
                     break;
                 case "YellowCore":
                     plantObject = yellowCorePlant;
+                    break;
+                case "Lilly":
+                    plantObject = lillyPlant;
                     break;
                 default:
                     break;
@@ -98,7 +133,7 @@ public class ShowPlant : MonoBehaviour
     {
         if (planted == false)
         {
-            plantTransform = Instantiate(plantStartObject.prefab, spawnPoint);
+            plantTransform = Instantiate(plantSeedObject.prefab, spawnPoint);
             plantTransform.localPosition = Vector3.zero;
 
             timer.SetSeconds(plantObject.seconds);

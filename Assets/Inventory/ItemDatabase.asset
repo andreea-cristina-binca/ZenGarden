@@ -491,6 +491,49 @@ MonoBehaviour:
     modifiers: []
   ingredients: []
   properties: []
+--- !u!114 &-4144437703785147046
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Lilly
+  m_EditorClassIdentifier: 
+  m_Id: 7ad849a9-bd03-4622-94e0-878591bd4cf0
+  m_ItemName: Lilly
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: f94ea26420649144dace712aa78ad278, type: 3}
+  m_Prefab: {fileID: 129746346745514977, guid: 1d4a40cd0ce501c4ca404b6af70052bc, type: 3}
+  m_Description: Beautiful pink-white lillies
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 10
+  m_CanBuyBack: 0
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 10
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &-3094648347103256403
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -682,6 +725,8 @@ MonoBehaviour:
   - {fileID: -4502291100217963912}
   - {fileID: 8494957154257734954}
   - {fileID: 7137649353903654467}
+  - {fileID: -4144437703785147046}
+  - {fileID: 1991887731063642998}
   currencies:
   - {fileID: -9008354556261382020}
   raritys: []
@@ -754,6 +799,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unstackEvent: 3
   unstackKeyCode: 304
+--- !u!114 &1991887731063642998
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Lilly Seeds
+  m_EditorClassIdentifier: 
+  m_Id: 7b7cdbf0-7afb-459b-b192-3186ef232e52
+  m_ItemName: Lilly Seeds
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 955a8583c5612324c8f0f137104e82a0, type: 3}
+  m_Prefab: {fileID: 6193384571874414416, guid: 24734f10ad29111448ca5e81aafee3c6,
+    type: 3}
+  m_Description: Seeds for lillies
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 1
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 1
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 10
+  m_MaxStack: 10
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &4619771673954617027
 MonoBehaviour:
   m_ObjectHideFlags: 1

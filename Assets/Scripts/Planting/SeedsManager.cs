@@ -9,6 +9,7 @@ public class SeedsManager : MonoBehaviour
     [SerializeField] private GameObject roseSeed;
     [SerializeField] private GameObject daffodilSeed;
     [SerializeField] private GameObject yellowCoreSeed;
+    [SerializeField] private GameObject lillySeed;
 
     private Transform holdingTransform;
 
@@ -17,6 +18,8 @@ public class SeedsManager : MonoBehaviour
         gameObject.GetComponent<ItemCollection>().RemoveAt(0);
         if (gameObject.GetComponent<ItemCollection>().IsEmpty)
             Destroy(gameObject);
+
+        Debug.Log(seedGameObject.tag);
 
         switch (seedGameObject.tag)
         {
@@ -36,10 +39,16 @@ public class SeedsManager : MonoBehaviour
                 holdingTransform = GameObject.Instantiate(yellowCoreSeed.transform, playerHoldingPoint);
                 holdingTransform.localPosition = Vector3.zero;
                 break;
+            case "Lilly":
+                holdingTransform = GameObject.Instantiate(lillySeed.transform, playerHoldingPoint);
+                holdingTransform.localPosition = Vector3.zero;
+                Debug.Log("ar trb sa fie in mana");
+                break;
             default:
                 break;
         }
 
+        Debug.Log(holdingTransform.gameObject);
         return holdingTransform.gameObject;
     }
 }
