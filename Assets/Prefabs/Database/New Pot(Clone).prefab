@@ -1069,6 +1069,9 @@ MonoBehaviour:
   daffodilPlant: {fileID: 11400000, guid: 6ead8b1f75a46164a97e2a66710353e3, type: 2}
   yellowCorePlant: {fileID: 11400000, guid: 4d865fdbe7a67a5478c98b9507210f0e, type: 2}
   lillyPlant: {fileID: 11400000, guid: 40b2cca70299cde4c86c5743f423101f, type: 2}
+  sunflowerPlant: {fileID: 11400000, guid: 1735e34c68b9ee14994cabdef95fb2bc, type: 2}
+  snowdropPlant: {fileID: 11400000, guid: 84a837c8adf524b4cb751f4d52c7aa43, type: 2}
+  poinsettiaPlant: {fileID: 11400000, guid: 2963c66fe3c93c44ca32da5322483396, type: 2}
 --- !u!1 &7552910217229082316
 GameObject:
   m_ObjectHideFlags: 0

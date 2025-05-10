@@ -253,6 +253,14 @@ MonoBehaviour:
     type: 3}
   yellowCoreSeed: {fileID: 3192136709002642208, guid: bc978fecded0711478fecf8f49da8696,
     type: 3}
+  lillySeed: {fileID: 5355322914786517695, guid: cccbeffe0b3d29b489e8f55cb43838c5,
+    type: 3}
+  sunflowerSeed: {fileID: 5355322914786517695, guid: 5fca8a4b343548f409cc369110637298,
+    type: 3}
+  snowdropSeed: {fileID: 5355322914786517695, guid: 5ca4c473741e212488e68c9c19ec2fbb,
+    type: 3}
+  poinsettiaSeed: {fileID: 5355322914786517695, guid: 116f3881f1f4ad54589e1b6d613ea75b,
+    type: 3}
 --- !u!114 &4199522830251287160
 MonoBehaviour:
   m_ObjectHideFlags: 0

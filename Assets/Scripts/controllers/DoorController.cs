@@ -10,16 +10,15 @@ public class DoorController : MonoBehaviour
         if (other.gameObject.CompareTag("Vendor"))
         {
             doorAnimator.SetBool("isOpen", true);
-            Debug.Log("entered");
         }
             
     }
 
-    private void OnTriggerStay(Collider other)
+    /* private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Vendor"))
             Debug.Log(other.gameObject);
-    }
+    } */
 
     void OnTriggerExit(Collider other)
     {
@@ -27,6 +26,5 @@ public class DoorController : MonoBehaviour
         {
             doorAnimator.SetBool("isOpen", false);
         }
-            Debug.Log("exited");
     }
 }

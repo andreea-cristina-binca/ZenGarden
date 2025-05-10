@@ -44,6 +44,49 @@ MonoBehaviour:
   ingredients: []
   properties: []
   currencyConversions: []
+--- !u!114 &-8963727781226427263
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Sunflower
+  m_EditorClassIdentifier: 
+  m_Id: 6c0750ef-a0be-4da8-8759-9fb97162a5fb
+  m_ItemName: Sunflower
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 92896882b71b7c943b8458d6928e9a36, type: 3}
+  m_Prefab: {fileID: 129746346745514977, guid: ea06c3d8d3d02214d81e46c9eff16277, type: 3}
+  m_Description: Tall sunny sunflower
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 15
+  m_CanBuyBack: 0
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 15
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &-8714117849886982192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -173,8 +216,10 @@ MonoBehaviour:
   - {fileID: 4619771673954617027}
   - {fileID: -4920201477338114218}
   - {fileID: -944683790886301280}
-  m_Amounts: 0a0000000a0000000a0000000a0000000200000002000000020000000200000002000000010000000100000001000000
+  - {fileID: 2245067793031788408}
+  m_Amounts: 0a0000000a0000000a0000000a00000002000000020000000200000002000000020000000100000001000000010000000a000000
   m_Modifiers:
+  - modifiers: []
   - modifiers: []
   - modifiers: []
   - modifiers: []
@@ -403,6 +448,50 @@ MonoBehaviour:
     modifiers: []
   ingredients: []
   properties: []
+--- !u!114 &-7377313384336342191
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Sunflower Seeds
+  m_EditorClassIdentifier: 
+  m_Id: f29e3359-c6a5-4aa4-accb-183e35fb2838
+  m_ItemName: Sunflower Seeds
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 1797f31788a71fc4faaebafddda01275, type: 3}
+  m_Prefab: {fileID: 6193384571874414416, guid: c67909b9c884ca249a6820e6dbc8be73,
+    type: 3}
+  m_Description: "Seeds for sunflowers \n**Only available during summer time**"
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 1
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 1
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 10
+  m_MaxStack: 10
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &-4920201477338114218
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -510,6 +599,49 @@ MonoBehaviour:
   m_Icon: {fileID: 21300000, guid: f94ea26420649144dace712aa78ad278, type: 3}
   m_Prefab: {fileID: 129746346745514977, guid: 1d4a40cd0ce501c4ca404b6af70052bc, type: 3}
   m_Description: Beautiful pink-white lillies
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 10
+  m_CanBuyBack: 0
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 10
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+--- !u!114 &-3542258036137281148
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Poinsettia
+  m_EditorClassIdentifier: 
+  m_Id: 1ef78a6a-ff38-44fd-b681-7fd6eaaca05f
+  m_ItemName: Poinsettia
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 51bd43491e2400d4a98869103fe3992f, type: 3}
+  m_Prefab: {fileID: 129746346745514977, guid: 3ac7e43e8399c174186efb59d9aa0cc5, type: 3}
+  m_Description: Festive red poinsettia
   m_Category: {fileID: -8714117849886982192}
   m_IsSellable: 1
   m_BuyPrice: 10
@@ -714,8 +846,9 @@ MonoBehaviour:
   - {fileID: -8480780831047694530}
   - {fileID: 5277878523181904017}
   - {fileID: 7296480038318277723}
-  - {fileID: 914045514894526987}
   - {fileID: -1328188924954542639}
+  - {fileID: 914045514894526987}
+  - {fileID: 3930526938172368380}
   - {fileID: 8723047200007963551}
   - {fileID: 4619771673954617027}
   - {fileID: -4920201477338114218}
@@ -727,6 +860,12 @@ MonoBehaviour:
   - {fileID: 7137649353903654467}
   - {fileID: -4144437703785147046}
   - {fileID: 1991887731063642998}
+  - {fileID: -8963727781226427263}
+  - {fileID: -7377313384336342191}
+  - {fileID: 931572553740736462}
+  - {fileID: 2245067793031788408}
+  - {fileID: -3542258036137281148}
+  - {fileID: 6189661902289264564}
   currencies:
   - {fileID: -9008354556261382020}
   raritys: []
@@ -785,6 +924,49 @@ MonoBehaviour:
     modifiers: []
   ingredients: []
   properties: []
+--- !u!114 &931572553740736462
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Snowdrop
+  m_EditorClassIdentifier: 
+  m_Id: 204a5056-842a-438e-bcd6-519527fd40bb
+  m_ItemName: Snowdrop
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 7b6f3d72c7a6c8344a943e5f6c9d0ce8, type: 3}
+  m_Prefab: {fileID: 129746346745514977, guid: 255177bdcdd811646a82a3580bdb246c, type: 3}
+  m_Description: Small pretty snowdrops
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 5
+  m_CanBuyBack: 0
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 5
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 1
+  m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
 --- !u!114 &1443340347231830165
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -815,10 +997,109 @@ MonoBehaviour:
   m_ItemName: Lilly Seeds
   m_UseItemNameAsDisplayName: 1
   m_DisplayName: New Item
-  m_Icon: {fileID: 21300000, guid: 955a8583c5612324c8f0f137104e82a0, type: 3}
+  m_Icon: {fileID: 21300000, guid: fb4ff5f0095a4104c9d9be6254853f5b, type: 3}
   m_Prefab: {fileID: 6193384571874414416, guid: 24734f10ad29111448ca5e81aafee3c6,
     type: 3}
-  m_Description: Seeds for lillies
+  m_Description: 'Seeds for lillies
+
+    **Only available during autumn time**'
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 1
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 1
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 10
+  m_MaxStack: 10
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+--- !u!114 &2245067793031788408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Snowdrop Seeds
+  m_EditorClassIdentifier: 
+  m_Id: 9fe9c22e-5ea6-4920-855e-40360c7ba04c
+  m_ItemName: Snowdrop Seeds
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 81a5007585cec2a4d908c70a22321c6c, type: 3}
+  m_Prefab: {fileID: 6193384571874414416, guid: 961b2b4cebf79444ab4ba325aabc19b5,
+    type: 3}
+  m_Description: "Seeds for snowdrops \n**Only available during spring time**"
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 1
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 1
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 10
+  m_MaxStack: 10
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+--- !u!114 &3930526938172368380
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Seasonal Seeds
+  m_EditorClassIdentifier: 
+  m_Id: 71e8da4a-059c-4bf8-a4b9-4dbf0fa45efe
+  m_ItemName: Seasonal Seeds
+  m_UseItemNameAsDisplayName: 0
+  m_DisplayName: Snowdrop Seeds
+  m_Icon: {fileID: 21300000, guid: 81a5007585cec2a4d908c70a22321c6c, type: 3}
+  m_Prefab: {fileID: 6193384571874414416, guid: 961b2b4cebf79444ab4ba325aabc19b5,
+    type: 3}
+  m_Description: 'Only available during specific season:
+
+    Lilly            ~
+    Autumn
+
+    Sunflower ~ Summer
+
+    Snowdrop ~ Spring
+
+    Poinsettia ~ Winter'
   m_Category: {fileID: -8714117849886982192}
   m_IsSellable: 1
   m_BuyPrice: 1
@@ -915,6 +1196,50 @@ MonoBehaviour:
   m_SellCurrency: {fileID: -9008354556261382020}
   m_Stack: 1
   m_MaxStack: 1
+  m_IsDroppable: 1
+  m_DropSound: {fileID: 0}
+  m_OverridePrefab: {fileID: 0}
+  m_IsCraftable: 0
+  m_CraftingDuration: 2
+  m_UseCraftingSkill: 0
+  m_SkillWindow: Skills
+  m_CraftingSkill: {fileID: 0}
+  m_RemoveIngredientsWhenFailed: 0
+  m_MinCraftingSkillValue: 0
+  m_CraftingAnimatorState: Blacksmithy
+  m_CraftingModifier:
+    modifiers: []
+  ingredients: []
+  properties: []
+--- !u!114 &6189661902289264564
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14be5e3e6cf2204293682bf65bce5dc, type: 3}
+  m_Name: Poinsettia Seeds
+  m_EditorClassIdentifier: 
+  m_Id: db66c9b3-9b55-40e8-92e6-a9b79e4177e3
+  m_ItemName: Poinsettia Seeds
+  m_UseItemNameAsDisplayName: 1
+  m_DisplayName: New Item
+  m_Icon: {fileID: 21300000, guid: 547324ae12755f74d9ca3f832f189b43, type: 3}
+  m_Prefab: {fileID: 6193384571874414416, guid: 0ce14a5283c9ab94a92e5e14c2e9c686,
+    type: 3}
+  m_Description: "Seeds for poinsettias \n**Only available during winter time**"
+  m_Category: {fileID: -8714117849886982192}
+  m_IsSellable: 1
+  m_BuyPrice: 1
+  m_CanBuyBack: 1
+  m_BuyCurrency: {fileID: -9008354556261382020}
+  m_SellPrice: 1
+  m_SellCurrency: {fileID: -9008354556261382020}
+  m_Stack: 10
+  m_MaxStack: 10
   m_IsDroppable: 1
   m_DropSound: {fileID: 0}
   m_OverridePrefab: {fileID: 0}

@@ -15,6 +15,9 @@ public class ShowPlant : MonoBehaviour
     [SerializeField] private PlantSO daffodilPlant;
     [SerializeField] private PlantSO yellowCorePlant;
     [SerializeField] private PlantSO lillyPlant;
+    [SerializeField] private PlantSO sunflowerPlant;
+    [SerializeField] private PlantSO snowdropPlant;
+    [SerializeField] private PlantSO poinsettiaPlant;
 
     private PlantSO plantObject;
     private Transform plantTransform;
@@ -103,6 +106,15 @@ public class ShowPlant : MonoBehaviour
                 case "Lilly":
                     plantObject = lillyPlant;
                     break;
+                case "Sunflower":
+                    plantObject = sunflowerPlant;
+                    break;
+                case "Snowdrop":
+                    plantObject = snowdropPlant;
+                    break;
+                case "Poinsettia":
+                    plantObject = poinsettiaPlant;
+                    break;
                 default:
                     break;
             }
@@ -111,7 +123,7 @@ public class ShowPlant : MonoBehaviour
             {
                 if (Plant())
                 {
-                    Debug.Log("Planted");
+                    // Debug.Log("Planted");
                     Destroy(isHolding.gameObject);
                     isHolding = null;
                 }
@@ -122,7 +134,7 @@ public class ShowPlant : MonoBehaviour
         {
             if (Harvest())
             {
-                Debug.Log("Harvested");
+                // Debug.Log("Harvested");
             }
         }
 
