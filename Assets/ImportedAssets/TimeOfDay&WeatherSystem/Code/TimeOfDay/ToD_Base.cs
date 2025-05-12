@@ -229,14 +229,14 @@ public class ToD_Base : MonoBehaviour
     /// </summary>
     void Start()
     {
-        _fStartingHour = ONEHOURLENGTH * (float)_iStartHour;
-        _fCurrentTimeOfDay = _fStartingHour;
-        _fCurrentTimeOfDay += (60 * int.Parse(System.DateTime.UtcNow.ToLocalTime().ToString("mm")) / _fSecondInAFullDay) * _fTimeMultiplier;
+        System.DateTime now = System.DateTime.Now;
 
-        _fStartingSunrise = ONEHOURLENGTH * (float)_iSunriseStart;
-        _fStartingDay = ONEHOURLENGTH * (float)_iDayStart;
-        _fStartingSunset = ONEHOURLENGTH * (float)_iSunsetStart;
-        _fStartingNight = ONEHOURLENGTH * (float)_iNightStart;
+        _fCurrentTimeOfDay = (now.Hour + now.Minute / 60f + now.Second / 3600f) / 24f;
+
+        _fStartingSunrise = ONEHOURLENGTH * _iSunriseStart;
+        _fStartingDay = ONEHOURLENGTH * _iDayStart;
+        _fStartingSunset = ONEHOURLENGTH * _iSunsetStart;
+        _fStartingNight = ONEHOURLENGTH * _iNightStart;
 
         _iAmountOfDaysPlayed = 0;
         _fCurrentHour = 0.0f;
